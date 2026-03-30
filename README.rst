@@ -1,9 +1,10 @@
-Template for the Read the Docs tutorial
-=======================================
-
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+Read the Docs documentation for dsupdt
+======================================
 
 Read the tutorial here:
 
 https://docs.readthedocs.io/en/stable/tutorial/
+
+The documenation for this repo can be viewed at
+
+https://gdex-docs-dsupdt.readthedocs.io/en/latest/index.html

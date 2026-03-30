@@ -3,6 +3,11 @@ requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "lumache"
-authors = [{name = "Graziella", email = "graziella@lumache"}]
+name = "gdex-docs-dsupdt"
+authors = [{name = "Zaihua Ji", email = "zji@ucar.edu"}]
 dynamic = ["version", "description"]
+version = "1.0.1"
+description = "Documentation for dsupdt utility program in RDA Python package rda_python_dsupdt"
+
+[project.urls]
+"Homepage" = "https://github.com/NCAR/gdex-docs-dsupdt"
