@@ -14,9 +14,9 @@ creates and modifies all update control, local file, and
 remote file records for a given dataset. It combines :ref:`-SC <SC>` (-SetControl),
 :ref:`-SL <SL>` (-SetLocalFile), and :ref:`-SR <SR>` (-SetRemoteFile) into a single action.
 
-| **dsupdt** [:ref:`-(DS|Dataset) <DS>`] dNNNNNN -(SA|SetAll) [:ref:`Mode Options <mode3.2.2>`]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :ref:`-(IF|InputFile) <IF>` Input Files
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
+|  **dsupdt** [:ref:`-(DS|Dataset) <DS>`] dNNNNNN -(SA|SetAll) [:ref:`Mode Options <mode3.2.2>`]
+|                    :ref:`-(IF|InputFile) <IF>` Input Files
+|                   [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
 .. _mode3.2.2:
 

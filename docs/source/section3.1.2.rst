@@ -13,18 +13,18 @@ Action Option -**GC** (-**GetControl**) (Alias: -**GetUpdateControl**) :
 retrieves update control
 records for a given dataset.
 
-| **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(GC|GetControl) [:ref:`Mode Option <mode3.1.2>`]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(FN|FieldNames) <FN>` FieldNameString]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(CI|ControlIndex) <CI>` UpdateControlIndices]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(ID|ControlID) <ID>` ControlIdString]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(SN|Specialist) <SN>` DSSSpecialist]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(PI|ParentIndex) <PI>` ParentControlIndices]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(AN|ActionName) <AN>` DSUPDTActionNames]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(FQ|Frequency) <FQ>` UpdateControlFrequencies]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(CO|ControlOffset) <CO>` UpdateControlOffsets]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(CT|ControlTime) <CT>` UpdateControlTimes]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(OF|OutputFile) <OF>` OutputFileName]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
+|  **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(GC|GetControl) [:ref:`Mode Option <mode3.1.2>`]
+|                   [:ref:`-(FN|FieldNames) <FN>` FieldNameString]
+|                   [:ref:`-(CI|ControlIndex) <CI>` UpdateControlIndices]
+|                   [:ref:`-(ID|ControlID) <ID>` ControlIdString]
+|                   [:ref:`-(SN|Specialist) <SN>` DSSSpecialist]
+|                   [:ref:`-(PI|ParentIndex) <PI>` ParentControlIndices]
+|                   [:ref:`-(AN|ActionName) <AN>` DSUPDTActionNames]
+|                   [:ref:`-(FQ|Frequency) <FQ>` UpdateControlFrequencies]
+|                   [:ref:`-(CO|ControlOffset) <CO>` UpdateControlOffsets]
+|                   [:ref:`-(CT|ControlTime) <CT>` UpdateControlTimes]
+|                   [:ref:`-(OF|OutputFile) <OF>` OutputFileName]
+|                   [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
 .. _mode3.1.2:
 
@@ -120,7 +120,7 @@ available control records across all datasets owned by the specialist running
 
 **EXAMPLE 2. To retrieve the default update control fields for d277000:**
 
-| **dsupdt** d277000 GC
+|  **dsupdt** d277000 GC
 
 Content of the output:
 

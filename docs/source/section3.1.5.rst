@@ -14,16 +14,16 @@ creates or modifies remote file
 update records in GDEXDB for a given dataset and local file. One or more
 remote file records may be processed per execution.
 
-| **dsupdt** [:ref:`-(DS|Dataset) <DS>`] dNNNNNN -(SR|SetRemoteFile) [:ref:`Mode Option <mode3.1.5>`]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :ref:`-(LI|LocalIndex) <LI>` LocalFileIndices
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :ref:`-(RF|RemoteFile) <RF>` RemoteFileNames
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(DO|DownloadOrder) <DO>` DownloadOrderIndices]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(DC|DownloadCommand) <DC>` DownloadCommand]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(SF|ServerFile) <SF>` FileNamesOnRemoteServer]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(BT|BeginTime) <BT>` BeginningDay/Hour]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(ET|EndTime) <ET>` EndingDay/Hour]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(TI|TimeInterval) <TI>` TimeInterval]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
+|  **dsupdt** [:ref:`-(DS|Dataset) <DS>`] dNNNNNN -(SR|SetRemoteFile) [:ref:`Mode Option <mode3.1.5>`]
+|                    :ref:`-(LI|LocalIndex) <LI>` LocalFileIndices
+|                    :ref:`-(RF|RemoteFile) <RF>` RemoteFileNames
+|                   [:ref:`-(DO|DownloadOrder) <DO>` DownloadOrderIndices]
+|                   [:ref:`-(DC|DownloadCommand) <DC>` DownloadCommand]
+|                   [:ref:`-(SF|ServerFile) <SF>` FileNamesOnRemoteServer]
+|                   [:ref:`-(BT|BeginTime) <BT>` BeginningDay/Hour]
+|                   [:ref:`-(ET|EndTime) <ET>` EndingDay/Hour]
+|                   [:ref:`-(TI|TimeInterval) <TI>` TimeInterval]
+|                   [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
 .. _mode3.1.5:
 

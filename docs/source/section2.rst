@@ -5,7 +5,7 @@
 =====================
 
 |  **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] [:ref:`Action Option <section3>`] [:ref:`Mode Options <section4>`] [:ref:`Info Options <section5>`]
-|              or
+|                or
 |  **dsupdt** [:ref:`-(IF|InputFile) <IF>`] InputFileNames
 
 Brackets [] indicate optional elements. A pipe '|' within parentheses, as in
@@ -66,7 +66,7 @@ equal to OptionValue' condition.
 
 The description of an individual option is displayed when **dsupdt** is run as
 
-| **dsupdt** [Option] -(h|help) [Option]
+|  **dsupdt** [Option] -(h|help) [Option]
 
 The description is shown for the option placed either before or after -(h|help).
 If no option is given, or **dsupdt** is run without arguments, the full document
