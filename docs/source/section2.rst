@@ -9,8 +9,8 @@
 
    * - **dsupdt**
      - [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] [:ref:`Action Option <section3>`] [:ref:`Mode Options <section4>`] [:ref:`Info Options <section5>`]
-   * - 
-     - or
+   * -     or
+     -  
    * - **dsupdt**
      - [:ref:`-(IF|InputFile) <IF>`] InputFileNames
 
