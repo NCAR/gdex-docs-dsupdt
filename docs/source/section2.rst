@@ -5,7 +5,7 @@
 =====================
 
 | **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] [:ref:`Action Option <section3>`] [:ref:`Mode Options <section4>`] [:ref:`Info Options <section5>`]
-| \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 or
+| \ \ \ \ \  or
 | **dsupdt** [:ref:`-(IF|InputFile) <IF>`] InputFileNames
 
 Brackets [] indicate optional elements. A pipe '|' within parentheses, as in
