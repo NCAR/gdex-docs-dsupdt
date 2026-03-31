@@ -2,7 +2,7 @@
 .. _section3.1.5:
 
 3.1.5 - Set Remote Files
-=====================
+========================
 
 
 .. _SR:
@@ -62,5 +62,5 @@ if it fails, servers are tried in ascending index order until one succeeds.
 
 
 
-:ref:`Back to Top <section3.1.5>`
-:ref:`Back to Table of Contents <index>`
+| :ref:`Back to Top <section3.1.5>`
+| :ref:`Back to Table of Contents <index>`

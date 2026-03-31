@@ -2,7 +2,7 @@
 .. _section3.3.2:
 
 3.3.2 - Download Remote Files
-=====================
+=============================
 
 
 .. _DR:
@@ -97,5 +97,5 @@ when its name differs from the remote file name.
 
 
 
-:ref:`Back to Top <section3.3.2>`
-:ref:`Back to Table of Contents <index>`
+| :ref:`Back to Top <section3.3.2>`
+| :ref:`Back to Table of Contents <index>`

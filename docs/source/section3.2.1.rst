@@ -2,7 +2,7 @@
 .. _section3.2.1:
 
 3.2.1 - Get All Information
-=====================
+===========================
 
 
 .. _GA:
@@ -67,5 +67,5 @@ different from the local file name.
 
 
 
-:ref:`Back to Top <section3.2.1>`
-:ref:`Back to Table of Contents <index>`
+| :ref:`Back to Top <section3.2.1>`
+| :ref:`Back to Table of Contents <index>`

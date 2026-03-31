@@ -2,7 +2,7 @@
 .. _section3.3.7:
 
 3.3.7 - Unlock Local Files
-=====================
+==========================
 
 
 .. _UL:
@@ -30,5 +30,5 @@ is required to unlock a local file record.
 
 
 
-:ref:`Back to Top <section3.3.7>`
-:ref:`Back to Table of Contents <index>`
+| :ref:`Back to Top <section3.3.7>`
+| :ref:`Back to Table of Contents <index>`

@@ -2,7 +2,7 @@
 .. _section3.2:
 
 3.2 - All Information Actions
-=====================
+=============================
 
 For convenience, all update configuration for a dataset can be managed
 together using two comprehensive actions:
@@ -29,5 +29,5 @@ together using two comprehensive actions:
 
 
 
-:ref:`Back to Top <section3.2>`
-:ref:`Back to Table of Contents <index>`
+| :ref:`Back to Top <section3.2>`
+| :ref:`Back to Table of Contents <index>`

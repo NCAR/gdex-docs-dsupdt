@@ -2,7 +2,7 @@
 .. _section5.1:
 
 5.1 - Single-Value Info Options
-=====================
+===============================
 
 A single-value Info option passes exactly one value into this application.
 Exactly one value must follow each such option; providing no value or more
@@ -142,5 +142,5 @@ Defaults to 100 bytes. Can be overridden on the command line at run time.
 
 
 
-:ref:`Back to Top <section5.1>`
-:ref:`Back to Table of Contents <index>`
+| :ref:`Back to Top <section5.1>`
+| :ref:`Back to Table of Contents <index>`

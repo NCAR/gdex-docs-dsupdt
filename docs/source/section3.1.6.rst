@@ -2,7 +2,7 @@
 .. _section3.1.6:
 
 3.1.6 - Get Remote Files
-=====================
+========================
 
 
 .. _GR:
@@ -76,5 +76,5 @@ owned by the specialist running **dsupdt** is displayed.
 
 
 
-:ref:`Back to Top <section3.1.6>`
-:ref:`Back to Table of Contents <index>`
+| :ref:`Back to Top <section3.1.6>`
+| :ref:`Back to Table of Contents <index>`

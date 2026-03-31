@@ -2,7 +2,7 @@
 .. _section3.1.1:
 
 3.1.1 - Set Update Controls
-=====================
+===========================
 
 
 .. _SC:
@@ -74,5 +74,5 @@ Content of input file d277000.cntl:
 
 
 
-:ref:`Back to Top <section3.1.1>`
-:ref:`Back to Table of Contents <index>`
+| :ref:`Back to Top <section3.1.1>`
+| :ref:`Back to Table of Contents <index>`
