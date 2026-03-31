@@ -14,31 +14,31 @@ creates or modifies local file update
 records in GDEXDB for a given dataset. One or more records may be processed per
 execution.
 
-|  **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(SL|SetLocalFile) [:ref:`Mode Options <mode3.1.3>`]
-|                    :ref:`-(LI|LocalIndex) <LI>` LocalFileIndices
-|                   [:ref:`-(LF|LocalFile) <LF>` LocalFileNames]
-|                   [:ref:`-(CI|ControlIndex) <CI>` UpdateControlIndices]
-|                   [:ref:`-(PI|ParentIndex) <PI>` ParentLocalIndices]
-|                   [:ref:`-(FA|FileArchived) <FA>` ArchivedFileNames]
-|                   [:ref:`-(DC|DownloadCommand) <DC>` DownloadCommand]
-|                   [:ref:`-(AN|ActionName) <AN>` DSARCHActionNames]
-|                   [:ref:`-(OP|Options) <OP>` DSARCHOptions]
-|                   [:ref:`-(XO|ExecOrder) <XO>` ExecuteOrderIndices]
-|                   [:ref:`-(FQ|Frequency) <FQ>` DataFrequencies]
-|                   [:ref:`-(EP|EndPeriod) <EP>` PeriodEndAt]
-|                   [:ref:`-(DI|DueInterval) <DI>` DataDueInterval]
-|                   [:ref:`-(ED|EndDate) <ED>` NextDataEndDate]
-|                   [:ref:`-(EH|EndHour) <EH>` NextDataEndHour]
-|                   [:ref:`-(VI|ValidInterval) <VI>` UpdateValidInterval]
-|                   [:ref:`-(AT|AgeTime) <AT>` RemoteFileAgeTime]
-|                   [:ref:`-(WD|WorkDir) <WD>` WorkingDirectory]
-|                   [:ref:`-(CL|CleanCommand) <CL>` FileCleaningCommand]
-|                   [:ref:`-(MR|MissRemote) <MR>` AllowMissRemote]
-|                   [:ref:`-(PR|ProcessRemote) <PR>` AdditionalRemoteFileProcess]
-|                   [:ref:`-(BC|BuildCommand) <BC>` CommandBuildLocalFile]
-|                   [:ref:`-(SN|Specialist) <SN>` DSSSpecialist]
-|                   [:ref:`-(DE|Description) <DE>` FileDescription]
-|                   [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
+| **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(SL|SetLocalFile) [:ref:`Mode Options <mode3.1.3>`]
+|            :ref:`-(LI|LocalIndex) <LI>` LocalFileIndices
+|           [:ref:`-(LF|LocalFile) <LF>` LocalFileNames]
+|           [:ref:`-(CI|ControlIndex) <CI>` UpdateControlIndices]
+|           [:ref:`-(PI|ParentIndex) <PI>` ParentLocalIndices]
+|           [:ref:`-(FA|FileArchived) <FA>` ArchivedFileNames]
+|           [:ref:`-(DC|DownloadCommand) <DC>` DownloadCommand]
+|           [:ref:`-(AN|ActionName) <AN>` DSARCHActionNames]
+|           [:ref:`-(OP|Options) <OP>` DSARCHOptions]
+|           [:ref:`-(XO|ExecOrder) <XO>` ExecuteOrderIndices]
+|           [:ref:`-(FQ|Frequency) <FQ>` DataFrequencies]
+|           [:ref:`-(EP|EndPeriod) <EP>` PeriodEndAt]
+|           [:ref:`-(DI|DueInterval) <DI>` DataDueInterval]
+|           [:ref:`-(ED|EndDate) <ED>` NextDataEndDate]
+|           [:ref:`-(EH|EndHour) <EH>` NextDataEndHour]
+|           [:ref:`-(VI|ValidInterval) <VI>` UpdateValidInterval]
+|           [:ref:`-(AT|AgeTime) <AT>` RemoteFileAgeTime]
+|           [:ref:`-(WD|WorkDir) <WD>` WorkingDirectory]
+|           [:ref:`-(CL|CleanCommand) <CL>` FileCleaningCommand]
+|           [:ref:`-(MR|MissRemote) <MR>` AllowMissRemote]
+|           [:ref:`-(PR|ProcessRemote) <PR>` AdditionalRemoteFileProcess]
+|           [:ref:`-(BC|BuildCommand) <BC>` CommandBuildLocalFile]
+|           [:ref:`-(SN|Specialist) <SN>` DSSSpecialist]
+|           [:ref:`-(DE|Description) <DE>` FileDescription]
+|           [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
 .. _mode3.1.3:
 
@@ -75,7 +75,7 @@ control record's scheduled action to run automatically against that local file.
 
 **EXAMPLE 3. To set update information for two new local files of d744004 via input file 'd744004.loc':**
 
-|  **dsupdt** :ref:`SL <SL>` :ref:`-NL <NL>` :ref:`-IF <IF>` d744004.loc
+| **dsupdt** :ref:`SL <SL>` :ref:`-NL <NL>` :ref:`-IF <IF>` d744004.loc
 
 Content of input file d744004.loc:
 

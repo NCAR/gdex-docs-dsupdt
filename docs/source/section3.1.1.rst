@@ -15,27 +15,27 @@ control records in GDEXDB for a given dataset. These records schedule data
 update actions that are started automatically by the daemon 'dscheck'. One or
 more control records may be set per execution.
 
-|  **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(SC|SetControl) [:ref:`Mode Options <mode3.1.1>`]
-|  ``        ``          :ref:`-(CI|ControlIndex) <CI>` UpdateControlIndices
-|                   [:ref:`-(ID|ControlID) <ID>` ControlIdString]
-|                   [:ref:`-(SN|Specialist) <SN>` DSSSpecialist]
-|                   [:ref:`-(PI|ParentIndex) <PI>` ParentControlIndices]
-|                   [:ref:`-(AN|ActionName) <AN>` DSUPDTActionNames]
-|                   [:ref:`-(FQ|Frequency) <FQ>` UpdateControlFrequencies]
-|                   [:ref:`-(CO|ControlOffset) <CO>` UpdateControlOffsets]
-|                   [:ref:`-(CT|ControlTime) <CT>` UpdateControlTimes]
-|                   [:ref:`-(RI|RetryInterval) <RI>` ControlRetryInterval]
-|                   [:ref:`-(VI|ValidInterval) <VI>` UpdateValidInterval]
-|                   [:ref:`-(UC|UpdateControl) <UC>` UpdateControlOptions]
-|                   [:ref:`-(MC|EMailControl) <MC>` EmailControlOptions]
-|                   [:ref:`-(EC|ErrorControl) <EC>` ErrorControlOptions]
-|                   [:ref:`-(KF|KeepFile) <KF>` KeepFileOptions]
-|                   [:ref:`-(HO|HourOffset) <HO>` TimeZoneOffsets]
-|                   [:ref:`-(DT|DataTime) <DT>` DataUpdatedTimes]
-|                   [:ref:`-(HN|HostName) <HN>` HostNames]
-|                   [:ref:`-(XC|ExecuteCommand) <XC>` CommandAfterUpdate]
-|                   [:ref:`-(CC|CarbonCopy) <CC>` Cc'dEmailAddresses]
-|                   [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
+| **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(SC|SetControl) [:ref:`Mode Options <mode3.1.1>`]
+|            :ref:`-(CI|ControlIndex) <CI>` UpdateControlIndices
+|           [:ref:`-(ID|ControlID) <ID>` ControlIdString]
+|           [:ref:`-(SN|Specialist) <SN>` DSSSpecialist]
+|           [:ref:`-(PI|ParentIndex) <PI>` ParentControlIndices]
+|           [:ref:`-(AN|ActionName) <AN>` DSUPDTActionNames]
+|           [:ref:`-(FQ|Frequency) <FQ>` UpdateControlFrequencies]
+|           [:ref:`-(CO|ControlOffset) <CO>` UpdateControlOffsets]
+|           [:ref:`-(CT|ControlTime) <CT>` UpdateControlTimes]
+|           [:ref:`-(RI|RetryInterval) <RI>` ControlRetryInterval]
+|           [:ref:`-(VI|ValidInterval) <VI>` UpdateValidInterval]
+|           [:ref:`-(UC|UpdateControl) <UC>` UpdateControlOptions]
+|           [:ref:`-(MC|EMailControl) <MC>` EmailControlOptions]
+|           [:ref:`-(EC|ErrorControl) <EC>` ErrorControlOptions]
+|           [:ref:`-(KF|KeepFile) <KF>` KeepFileOptions]
+|           [:ref:`-(HO|HourOffset) <HO>` TimeZoneOffsets]
+|           [:ref:`-(DT|DataTime) <DT>` DataUpdatedTimes]
+|           [:ref:`-(HN|HostName) <HN>` HostNames]
+|           [:ref:`-(XC|ExecuteCommand) <XC>` CommandAfterUpdate]
+|           [:ref:`-(CC|CarbonCopy) <CC>` Cc'dEmailAddresses]
+|           [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
 .. _mode3.1.1:
 
@@ -60,7 +60,7 @@ a new control record.
 
 **EXAMPLE 1. To set three new update control records for d277000 using input file 'd277000.cntl':**
 
-|  **dsupdt** :ref:`SC <SC>` :ref:`-NC <NC>` :ref:`-IF <IF>` d277000.cntl
+| **dsupdt** :ref:`SC <SC>` :ref:`-NC <NC>` :ref:`-IF <IF>` d277000.cntl
 
 Content of input file d277000.cntl:
 
