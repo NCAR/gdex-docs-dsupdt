@@ -14,16 +14,16 @@ creates or modifies remote file
 update records in GDEXDB for a given dataset and local file. One or more
 remote file records may be processed per execution.
 
-|  **dsupdt** [:ref:`-(DS|Dataset) <DS>`] dNNNNNN -(SR|SetRemoteFile) [:ref:`Mode Option <mode3.1.5>`]
-|                    :ref:`-(LI|LocalIndex) <LI>` LocalFileIndices
-|                    :ref:`-(RF|RemoteFile) <RF>` RemoteFileNames
-|                   [:ref:`-(DO|DownloadOrder) <DO>` DownloadOrderIndices]
-|                   [:ref:`-(DC|DownloadCommand) <DC>` DownloadCommand]
-|                   [:ref:`-(SF|ServerFile) <SF>` FileNamesOnRemoteServer]
-|                   [:ref:`-(BT|BeginTime) <BT>` BeginningDay/Hour]
-|                   [:ref:`-(ET|EndTime) <ET>` EndingDay/Hour]
-|                   [:ref:`-(TI|TimeInterval) <TI>` TimeInterval]
-|                   [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
+| **dsupdt** [:ref:`-(DS|Dataset) <DS>`] dNNNNNN -(SR|SetRemoteFile) [:ref:`Mode Option <mode3.1.5>`]
+|            :ref:`-(LI|LocalIndex) <LI>` LocalFileIndices
+|            :ref:`-(RF|RemoteFile) <RF>` RemoteFileNames
+|           [:ref:`-(DO|DownloadOrder) <DO>` DownloadOrderIndices]
+|           [:ref:`-(DC|DownloadCommand) <DC>` DownloadCommand]
+|           [:ref:`-(SF|ServerFile) <SF>` FileNamesOnRemoteServer]
+|           [:ref:`-(BT|BeginTime) <BT>` BeginningDay/Hour]
+|           [:ref:`-(ET|EndTime) <ET>` EndingDay/Hour]
+|           [:ref:`-(TI|TimeInterval) <TI>` TimeInterval]
+|           [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
 .. _mode3.1.5:
 

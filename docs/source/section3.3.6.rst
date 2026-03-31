@@ -13,22 +13,22 @@ Action Option -**CF** (-**CleanFile**) :
 removes temporary files from the local working area,
 including files that have already been archived or have become outdated.
 
-|  **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(CF|CleanFile) [:ref:`Mode Options <mode3.3.6>`]
-|                   [:ref:`-(LI|LocalIndex) <LI>` LocalFileIndices]
-|                   [:ref:`-(LF|LocalFile) <LF>` LocalFileNames]
-|                   [:ref:`-(XO|ExecOrder) <XO>` ExecOrderIndex]
-|                   [:ref:`-(ED|EndDate) <ED>` NextDataEndDate]
-|                   [:ref:`-(EH|EndHour) <EH>` NextDataEndHour]
-|                   [:ref:`-(GP|GenericPattern) <GP>` GenericPatterns]
-|                   [:ref:`-(WD|WorkDir) <WD>` WorkingDirectory]
-|                   [:ref:`-(FQ|Frequency) <FQ>` UpdateFrequency]
-|                   [:ref:`-(CD|CurrentDate) <CD>` CurrentDate]
-|                   [:ref:`-(CH|CurrentHour) <CH>` CurrentHour]
-|                   [:ref:`-(PL|ProcessLimit) <PL>` MaxNumberOfChildProcesses]
-|                   [:ref:`-(QS|QsubOptions) <QS>`  PBSBatchOptions]
-|                   [:ref:`-(BP|BatchProcess) <BP>` [BatchProcessHosts]]
-|                   [:ref:`-(CC|CarbonCopy) <CC>` Cc'dEmailAddresses]
-|                   [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
+| **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(CF|CleanFile) [:ref:`Mode Options <mode3.3.6>`]
+|           [:ref:`-(LI|LocalIndex) <LI>` LocalFileIndices]
+|           [:ref:`-(LF|LocalFile) <LF>` LocalFileNames]
+|           [:ref:`-(XO|ExecOrder) <XO>` ExecOrderIndex]
+|           [:ref:`-(ED|EndDate) <ED>` NextDataEndDate]
+|           [:ref:`-(EH|EndHour) <EH>` NextDataEndHour]
+|           [:ref:`-(GP|GenericPattern) <GP>` GenericPatterns]
+|           [:ref:`-(WD|WorkDir) <WD>` WorkingDirectory]
+|           [:ref:`-(FQ|Frequency) <FQ>` UpdateFrequency]
+|           [:ref:`-(CD|CurrentDate) <CD>` CurrentDate]
+|           [:ref:`-(CH|CurrentHour) <CH>` CurrentHour]
+|           [:ref:`-(PL|ProcessLimit) <PL>` MaxNumberOfChildProcesses]
+|           [:ref:`-(QS|QsubOptions) <QS>`  PBSBatchOptions]
+|           [:ref:`-(BP|BatchProcess) <BP>` [BatchProcessHosts]]
+|           [:ref:`-(CC|CarbonCopy) <CC>` Cc'dEmailAddresses]
+|           [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
 .. _mode3.3.6:
 
