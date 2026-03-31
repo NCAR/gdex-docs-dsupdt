@@ -13,21 +13,21 @@ Action Option -**DL** (-**Delete**) (Aliases: -**RM**, -**Remove**) :
 deletes one or more update control,
 local file, or remote file records from GDEXDB.
 
-|  **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(DL|Delete) [:ref:`Mode Option <mode3.1.7>`]
-|             :ref:`-(CI|ControlIndex) <CI>` UpdateControlIndices
-|             [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
-|          or
+| **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(DL|Delete) [:ref:`Mode Option <mode3.1.7>`]
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :ref:`-(CI|ControlIndex) <CI>` UpdateControlIndices
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
+| &nbsp;&nbsp;&nbsp;&nbsp; or
 
-|  **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(DL|Delete) [:ref:`Mode Option <mode3.1.7>`]
-|             :ref:`-(LI|LocalIndex) <LI>` LocalFileIndices
-|             [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
-|          or
+| **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(DL|Delete) [:ref:`Mode Option <mode3.1.7>`]
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :ref:`-(LI|LocalIndex) <LI>` LocalFileIndices
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
+| &nbsp;&nbsp;&nbsp;&nbsp; or
 
-|  **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(DL|Delete) [:ref:`Mode Option <mode3.1.7>`]
-|             :ref:`-(LI|LocalIndex) <LI>` LocalFileIndices
-|             :ref:`-(RF|RemoteFile) <RF>` RemoteFileNames
-|             [:ref:`-(DO|DownloadOrder) <DO>` DownloadOrderIndices]
-|             [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
+| **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(DL|Delete) [:ref:`Mode Option <mode3.1.7>`]
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :ref:`-(LI|LocalIndex) <LI>` LocalFileIndices
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :ref:`-(RF|RemoteFile) <RF>` RemoteFileNames
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(DO|DownloadOrder) <DO>` DownloadOrderIndices]
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
 .. _mode3.1.7:
 
