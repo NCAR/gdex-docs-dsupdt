@@ -76,7 +76,7 @@ full addresses for domains outside 'ucar.edu'.
 
 **EXAMPLE 6. To Cc 'schuster@ucar.edu' on update results for d337000:**
 
-| **dsupdt** d337000 :ref:`UF <UF>` :ref:`-MU <MU>` :ref:`-IE <IE>` :ref:`-CC <CC>` schuster
+|  **dsupdt** d337000 :ref:`UF <UF>` :ref:`-MU <MU>` :ref:`-IE <IE>` :ref:`-CC <CC>` schuster
 
 
 .. _CI:

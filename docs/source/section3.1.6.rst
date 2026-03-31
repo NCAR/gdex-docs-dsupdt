@@ -13,15 +13,15 @@ Action Option -**GR** (-**GetRemoteFile**) (Alias: -**GetRemote**) :
 retrieves remote file update
 records matching the specified conditions.
 
-| **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(GR|GetRemoteFile) [:ref:`Mode Option <mode3.1.6>`]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(FN|FieldNames) <FN>` FieldNameString]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(LI|LocalIndex) <LI>` LocalFileIndices]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(LF|LocalFile) <LF>` LocalFileNames]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(RF|RemoteFile) <RF>` RemoteFileNames]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(DO|DownloadOrder) <DO>` DownloadOrderIndices]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(SF|ServerFile) <SF>` ServerFileNames]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(OF|OutputFile) <OF>` OutputFileName]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
+|  **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(GR|GetRemoteFile) [:ref:`Mode Option <mode3.1.6>`]
+|                   [:ref:`-(FN|FieldNames) <FN>` FieldNameString]
+|                   [:ref:`-(LI|LocalIndex) <LI>` LocalFileIndices]
+|                   [:ref:`-(LF|LocalFile) <LF>` LocalFileNames]
+|                   [:ref:`-(RF|RemoteFile) <RF>` RemoteFileNames]
+|                   [:ref:`-(DO|DownloadOrder) <DO>` DownloadOrderIndices]
+|                   [:ref:`-(SF|ServerFile) <SF>` ServerFileNames]
+|                   [:ref:`-(OF|OutputFile) <OF>` OutputFileName]
+|                   [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
 .. _mode3.1.6:
 

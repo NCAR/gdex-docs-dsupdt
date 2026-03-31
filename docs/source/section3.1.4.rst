@@ -14,15 +14,15 @@ retrieves local file update records
 for a given dataset. If local file indices or names are provided, only those
 records are returned.
 
-| **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(GL|GetLocalFile) [:ref:`Mode Option <mode3.1.4>`]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(FN|FieldNames) <FN>` FieldNameString]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(LI|LocalIndex) <LI>` LocalFileIndices]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(LF|LocalFile) <LF>` LocalFileNames]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(AN|ActionName) <AN>` DSARCHActionName]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(XO|ExecOrder) <XO>` ExecOrderIndex]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(FQ|Frequency) <FQ>` DataFrequencies]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(OF|OutputFile) <OF>` OutputFileName]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
+|  **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(GL|GetLocalFile) [:ref:`Mode Option <mode3.1.4>`]
+|                   [:ref:`-(FN|FieldNames) <FN>` FieldNameString]
+|                   [:ref:`-(LI|LocalIndex) <LI>` LocalFileIndices]
+|                   [:ref:`-(LF|LocalFile) <LF>` LocalFileNames]
+|                   [:ref:`-(AN|ActionName) <AN>` DSARCHActionName]
+|                   [:ref:`-(XO|ExecOrder) <XO>` ExecOrderIndex]
+|                   [:ref:`-(FQ|Frequency) <FQ>` DataFrequencies]
+|                   [:ref:`-(OF|OutputFile) <OF>` OutputFileName]
+|                   [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
 .. _mode3.1.4:
 
@@ -128,7 +128,7 @@ local files across all datasets owned by the specialist running **dsupdt**.
 
 **EXAMPLE 4. To retrieve the default local file fields for d744004, local file indices 33 and 34:**
 
-| **dsupdt** d744004 :ref:`GL <GL>` :ref:`-LI <LI>` 33 34
+|  **dsupdt** d744004 :ref:`GL <GL>` :ref:`-LI <LI>` 33 34
 
 Content of the output:
 

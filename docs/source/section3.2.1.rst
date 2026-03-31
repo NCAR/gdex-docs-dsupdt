@@ -14,13 +14,13 @@ retrieves all update control, local file, and remote file
 records for a given dataset. It combines :ref:`-GC <GC>` (-GetControl), :ref:`-GL <GL>` (-GetLocalFile),
 and :ref:`-GR <GR>` (-GetRemoteFile) into a single action.
 
-| **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(GA|GetAll) [:ref:`Mode Option <mode3.2.1>`]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(CI|ControlIndex) <CI>` UpdateControlIndices]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(LI|LocalIndex) <LI>` LocalFileIndices]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(LF|LocalFile) <LF>` LocalFileNames]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(RF|RemoteFile) <RF>` RemoteFileNames]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(OF|OutputFile) <OF>` OutputFileName]
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
+|  **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(GA|GetAll) [:ref:`Mode Option <mode3.2.1>`]
+|                   [:ref:`-(CI|ControlIndex) <CI>` UpdateControlIndices]
+|                   [:ref:`-(LI|LocalIndex) <LI>` LocalFileIndices]
+|                   [:ref:`-(LF|LocalFile) <LF>` LocalFileNames]
+|                   [:ref:`-(RF|RemoteFile) <RF>` RemoteFileNames]
+|                   [:ref:`-(OF|OutputFile) <OF>` OutputFileName]
+|                   [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
 .. _mode3.2.1:
 
@@ -45,7 +45,7 @@ into **dsupdt** via :ref:`-SA <SA>` (-SetAll) to apply changes to GDEXDB.
 
 **EXAMPLE 5. To retrieve all update control, local file, and remote file information for d277000 at control index 2:**
 
-| **dsupdt** d277000 :ref:`GA <GA>` :ref:`-CI <CI>` 2 :ref:`-OF <OF>` d277000.c1
+|  **dsupdt** d277000 :ref:`GA <GA>` :ref:`-CI <CI>` 2 :ref:`-OF <OF>` d277000.c1
 
 Content of output file d277000.c1:
 
