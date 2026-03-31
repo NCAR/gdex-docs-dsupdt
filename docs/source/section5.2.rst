@@ -2,7 +2,7 @@
 .. _section5.2:
 
 5.2 - Multi-Value Info Options
-=====================
+=================================
 
 A multi-value Info option passes one or more values for a single Info option
 into **dsupdt**. At least one value must follow each multi-value option.
@@ -606,5 +606,5 @@ within a dataset. Ignored when :ref:`-RO <RO>` (-ResetOrder) is present.
 
 
 
-:ref:`Back to Top <section5.2>`
-:ref:`Back to Table of Contents <index>`
+| :ref:`Back to Top <section5.2>`
+| :ref:`Back to Table of Contents <index>`

@@ -2,7 +2,7 @@
 .. _section3.3.6:
 
 3.3.6 - Clean Temporary Files
-=====================
+=================================
 
 
 .. _CF:
@@ -68,5 +68,5 @@ action is skipped.
 
 
 
-:ref:`Back to Top <section3.3.6>`
-:ref:`Back to Table of Contents <index>`
+| :ref:`Back to Top <section3.3.6>`
+| :ref:`Back to Table of Contents <index>`

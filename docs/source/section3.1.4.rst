@@ -2,7 +2,7 @@
 .. _section3.1.4:
 
 3.1.4 - Get Local Files
-=====================
+=================================
 
 
 .. _GL:
@@ -141,5 +141,5 @@ Content of the output:
 
 
 
-:ref:`Back to Top <section3.1.4>`
-:ref:`Back to Table of Contents <index>`
+| :ref:`Back to Top <section3.1.4>`
+| :ref:`Back to Table of Contents <index>`

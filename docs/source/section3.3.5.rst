@@ -2,7 +2,7 @@
 .. _section3.3.5:
 
 3.3.5 - Archive Local Files
-=====================
+=================================
 
 
 .. _AF:
@@ -81,5 +81,5 @@ local file is skipped.
 
 
 
-:ref:`Back to Top <section3.3.5>`
-:ref:`Back to Table of Contents <index>`
+| :ref:`Back to Top <section3.3.5>`
+| :ref:`Back to Table of Contents <index>`

@@ -2,7 +2,7 @@
 .. _section3.3.8:
 
 3.3.8 - Check Update Status
-=====================
+=================================
 
 
 .. _CU:
@@ -63,5 +63,5 @@ checked for update status.
 
 
 
-:ref:`Back to Top <section3.3.8>`
-:ref:`Back to Table of Contents <index>`
+| :ref:`Back to Top <section3.3.8>`
+| :ref:`Back to Table of Contents <index>`

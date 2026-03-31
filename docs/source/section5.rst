@@ -2,7 +2,7 @@
 .. _section5:
 
 5 - INFORMATION OPTIONS
-=====================
+=================================
 
 Information (Info) options supply values to **dsupdt**. There are two types:
 
@@ -28,5 +28,5 @@ Information (Info) options supply values to **dsupdt**. There are two types:
 
 
 
-:ref:`Back to Top <section5>`
-:ref:`Back to Table of Contents <index>`
+| :ref:`Back to Top <section5>`
+| :ref:`Back to Table of Contents <index>`

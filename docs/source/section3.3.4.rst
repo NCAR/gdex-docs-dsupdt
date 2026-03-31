@@ -2,7 +2,7 @@
 .. _section3.3.4:
 
 3.3.4 - Process Both Files
-=====================
+=================================
 
 
 .. _PB:
@@ -91,5 +91,5 @@ builds local files in a single action.
 
 
 
-:ref:`Back to Top <section3.3.4>`
-:ref:`Back to Table of Contents <index>`
+| :ref:`Back to Top <section3.3.4>`
+| :ref:`Back to Table of Contents <index>`

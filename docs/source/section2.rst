@@ -2,7 +2,7 @@
 .. _section2:
 
 2 - GENERAL DSUPDT USAGE
-=====================
+=================================
 
 | **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] [:ref:`Action Option <section3>`] [:ref:`Mode Options <section4>`] [:ref:`Info Options <section5>`]
 |        or
@@ -61,8 +61,8 @@ on the command line to prevent shell interpretation:
    * - '<>'
      - range between two values
 
-Combining '!' and '<' as "'!' '<' OptionValue" expresses a 'greater than or
-equal to OptionValue' condition.
+Combining '!' and '<' as "-<OptionName>!<OptionValue>" expresses a 'greater than
+or equal to OptionValue' condition.
 
 The description of an individual option is displayed when **dsupdt** is run as
 
@@ -76,5 +76,5 @@ environment variable for the DSS home directory.
 
 
 
-:ref:`Back to Top <section2>`
-:ref:`Back to Table of Contents <index>`
+| :ref:`Back to Top <section2>`
+| :ref:`Back to Table of Contents <index>`

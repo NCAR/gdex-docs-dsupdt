@@ -2,7 +2,7 @@
 .. _section3.1:
 
 3.1 - Configuration Actions
-=====================
+=================================
 
 Update control, local file, and remote file information can be created,
 modified, viewed, or deleted via the actions in this section:
@@ -47,5 +47,5 @@ modified, viewed, or deleted via the actions in this section:
 
 
 
-:ref:`Back to Top <section3.1>`
-:ref:`Back to Table of Contents <index>`
+| :ref:`Back to Top <section3.1>`
+| :ref:`Back to Table of Contents <index>`

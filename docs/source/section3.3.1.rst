@@ -2,7 +2,7 @@
 .. _section3.3.1:
 
 3.3.1 - Update Data Files
-=====================
+=================================
 
 
 .. _UF:
@@ -129,5 +129,5 @@ download/archive procedure. Their command-line syntax is similar to :ref:`-UF <U
 
 
 
-:ref:`Back to Top <section3.3.1>`
-:ref:`Back to Table of Contents <index>`
+| :ref:`Back to Top <section3.3.1>`
+| :ref:`Back to Table of Contents <index>`

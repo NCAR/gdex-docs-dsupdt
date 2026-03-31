@@ -2,7 +2,7 @@
 .. _section3.3.3:
 
 3.3.3 - Build Local Files
-=====================
+=================================
 
 
 .. _BL:
@@ -86,5 +86,5 @@ skipped. To rebuild, remove the existing local file manually.
 
 
 
-:ref:`Back to Top <section3.3.3>`
-:ref:`Back to Table of Contents <index>`
+| :ref:`Back to Top <section3.3.3>`
+| :ref:`Back to Table of Contents <index>`

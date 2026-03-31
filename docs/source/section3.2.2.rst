@@ -2,7 +2,7 @@
 .. _section3.2.2:
 
 3.2.2 - Set All Information
-=====================
+=================================
 
 
 .. _SA:
@@ -41,5 +41,5 @@ specified in an input file. A convenient way to create one is to run :ref:`-GA <
 
 
 
-:ref:`Back to Top <section3.2.2>`
-:ref:`Back to Table of Contents <index>`
+| :ref:`Back to Top <section3.2.2>`
+| :ref:`Back to Table of Contents <index>`

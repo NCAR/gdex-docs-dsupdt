@@ -2,7 +2,7 @@
 .. _section3.1.7:
 
 3.1.7 - Delete Update Information
-=====================
+=================================
 
 
 .. _DL:
@@ -47,5 +47,5 @@ file index and the remote file name.
 
 
 
-:ref:`Back to Top <section3.1.7>`
-:ref:`Back to Table of Contents <index>`
+| :ref:`Back to Top <section3.1.7>`
+| :ref:`Back to Table of Contents <index>`

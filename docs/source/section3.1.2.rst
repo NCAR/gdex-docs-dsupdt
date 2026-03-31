@@ -2,7 +2,7 @@
 .. _section3.1.2:
 
 3.1.2 - Get Update Controls
-=====================
+=================================
 
 
 .. _GC:
@@ -102,7 +102,7 @@ Valid field names of update controls and their corresponding :ref:`Info option <
      - :ref:`-(HN|HostName) <HN>`
      - hostnames on which this control index can or cannot be processed
    * - Q
-     - :ref:`-(QS|QSubOptions) <QS>`
+     - :ref:`-(QS|QsubOptions) <QS>`
      - additional PBS qsub options
    * - Y
      - :ref:`-(CC|CarbonCopy) <CC>`
@@ -134,5 +134,5 @@ Content of the output:
 
 
 
-:ref:`Back to Top <section3.1.2>`
-:ref:`Back to Table of Contents <index>`
+| :ref:`Back to Top <section3.1.2>`
+| :ref:`Back to Table of Contents <index>`
