@@ -2,7 +2,7 @@
 .. _section3.2:
 
 3.2 - All Information Actions
-=============================
+=================================
 
 For convenience, all update configuration for a dataset can be managed
 together using two comprehensive actions:

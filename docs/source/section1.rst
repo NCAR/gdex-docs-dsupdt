@@ -2,7 +2,7 @@
 .. _section1:
 
 1 - INTRODUCTION
-=====================
+=================================
 
 **dsupdt** is a utility for performing periodic dataset updates by calling `dsarch <https://gdex-docs-dsarch.readthedocs.io/en/latest/index.html>`_
 to archive data onto CISL Geoscience Data Exchange (GDEX) Servers.
@@ -25,10 +25,10 @@ on placing a dataset under `dsarch <https://gdex-docs-dsarch.readthedocs.io/en/l
 Once update information is configured in GDEXDB, **dsupdt** downloads and archives
 data in the following steps:
 
-|  Server Files on remote server or at other local area =======DOWNLOAD/COPY=>
-|  Remote Files at local working area ======================VALIDATE/CONVERT=>
-|  Remote Files ready for building Local Files ===========TAR/COMPRESS/BUILD=>
-|  Local Files ready for archive =====================================DSARCH=>
+|  Server Files on remote server or at other local area ===DOWNLOAD/COPY=>
+|  Remote Files at local working area ==================VALIDATE/CONVERT=>
+|  Remote Files ready for building Local Files =======TAR/COMPRESS/BUILD=>
+|  Local Files ready for archive =================================DSARCH=>
 |  Files on GDEX Servers
 
 If not specified explicitly, the server file name defaults to the remote file name.
@@ -65,5 +65,5 @@ detailed descriptions of each option, with examples interspersed throughout.
 
 
 
-:ref:`Back to Top <section1>`
-:ref:`Back to Table of Contents <index>`
+| :ref:`Back to Top <section1>`
+| :ref:`Back to Table of Contents <index>`

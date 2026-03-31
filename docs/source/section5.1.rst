@@ -2,7 +2,7 @@
 .. _section5.1:
 
 5.1 - Single-Value Info Options
-===============================
+=================================
 
 A single-value Info option passes exactly one value into this application.
 Exactly one value must follow each such option; providing no value or more

@@ -2,7 +2,7 @@
 .. _section3.3:
 
 3.3 - Update Actions
-=====================
+=================================
 
 Data updates can be run as one comprehensive action (:ref:`-UF <UF>`) or as individual
 steps. This section covers the following actions:
@@ -43,5 +43,5 @@ steps. This section covers the following actions:
 
 
 
-:ref:`Back to Top <section3.3>`
-:ref:`Back to Table of Contents <index>`
+| :ref:`Back to Top <section3.3>`
+| :ref:`Back to Table of Contents <index>`

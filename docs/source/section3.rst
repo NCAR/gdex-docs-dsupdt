@@ -2,7 +2,7 @@
 .. _section3:
 
 3 - ACTION OPTIONS
-=====================
+=================================
 
 Action options specify what tasks **dsupdt** executes. No values follow Action
 options. Depending on the chosen Action, multiple tasks may be processed in a
@@ -47,5 +47,5 @@ handle:
 
 
 
-:ref:`Back to Top <section3>`
-:ref:`Back to Table of Contents <index>`
+| :ref:`Back to Top <section3>`
+| :ref:`Back to Table of Contents <index>`

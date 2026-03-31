@@ -2,7 +2,7 @@
 .. _section4:
 
 4 - MODE OPTIONS
-=====================
+=================================
 
 Mode options modify the behavior of :ref:`Action options <section3>`. All Mode options are
 optional and do not accept values.
@@ -295,5 +295,5 @@ actions succeed.
 
 
 
-:ref:`Back to Top <section4>`
-:ref:`Back to Table of Contents <index>`
+| :ref:`Back to Top <section4>`
+| :ref:`Back to Table of Contents <index>`

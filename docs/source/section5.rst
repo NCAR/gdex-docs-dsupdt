@@ -2,7 +2,7 @@
 .. _section5:
 
 5 - INFORMATION OPTIONS
-=======================
+=================================
 
 Information (Info) options supply values to **dsupdt**. There are two types:
 

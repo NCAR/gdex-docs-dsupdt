@@ -2,7 +2,7 @@
 .. _section2:
 
 2 - GENERAL DSUPDT USAGE
-========================
+=================================
 
 | **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] [:ref:`Action Option <section3>`] [:ref:`Mode Options <section4>`] [:ref:`Info Options <section5>`]
 |        or
