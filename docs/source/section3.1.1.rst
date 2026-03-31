@@ -16,7 +16,7 @@ update actions that are started automatically by the daemon 'dscheck'. One or
 more control records may be set per execution.
 
 |  **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(SC|SetControl) [:ref:`Mode Options <mode3.1.1>`]
-|                    :ref:`-(CI|ControlIndex) <CI>` UpdateControlIndices
+|  ``        ``          :ref:`-(CI|ControlIndex) <CI>` UpdateControlIndices
 |                   [:ref:`-(ID|ControlID) <ID>` ControlIdString]
 |                   [:ref:`-(SN|Specialist) <SN>` DSSSpecialist]
 |                   [:ref:`-(PI|ParentIndex) <PI>` ParentControlIndices]
