@@ -4,9 +4,9 @@
 2 - GENERAL DSUPDT USAGE
 =====================
 
-| **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] [:ref:`Action Option <section3>`] [:ref:`Mode Options <section4>`] [:ref:`Info Options <section5>`]
-| |nbsp| |nbsp| |nbsp| |nbsp| or
-| **dsupdt** [:ref:`-(IF|InputFile) <IF>`] InputFileNames
+|  **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] [:ref:`Action Option <section3>`] [:ref:`Mode Options <section4>`] [:ref:`Info Options <section5>`]
+|          or
+|  **dsupdt** [:ref:`-(IF|InputFile) <IF>`] InputFileNames
 
 Brackets [] indicate optional elements. A pipe '|' within parentheses, as in
 (A|B), means either A or B may be used. Options are divided into three
