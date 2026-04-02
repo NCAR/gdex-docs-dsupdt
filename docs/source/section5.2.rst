@@ -15,7 +15,7 @@ Info Option -**AN** (-**ActionName**) (Aliases: -**Action**, -**AC**) :
 
 the action to run: set in update control
 records to drive **dsupdt** processing, and in local file records to drive
-`dsarch <https://gdex-docs-dsarch.readthedocs.io/en/latest/index.html>`_ archiving.
+`dsarch <https://gdex-docs-dsarch.readthedocs.io>`_ archiving.
 
 
 .. _AT:
@@ -406,7 +406,7 @@ Info Option -**OP** (-**Options**) (Alias: -**DsarchOption**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 passes a string of up to 128
-characters to `dsarch <https://gdex-docs-dsarch.readthedocs.io/en/latest/index.html>`_ as additional Info and :ref:`Mode options <section4>` for archiving.
+characters to `dsarch <https://gdex-docs-dsarch.readthedocs.io>`_ as additional Info and :ref:`Mode options <section4>` for archiving.
 Group index or name values can be included, with temporal patterns embedded
 to dynamically identify group information at update time.
 

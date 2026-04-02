@@ -6,8 +6,8 @@ project = 'DSUPDT Guide'
 copyright = '2026, GDEX@NCAR, https://gdex.ucar.edu/'
 author = 'Zaihua Ji'
 
-release = '0.2'
-version = '1.0.2'
+release = '0.4'
+version = '1.0.4'
 
 # -- General configuration
 

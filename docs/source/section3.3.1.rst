@@ -83,7 +83,7 @@ up temporary data files generated during the update procedure.
    * - :ref:`-(QE|QuitError) <QE>`
      - stops all update processing for the dataset on the first error, rather than skipping and continuing
    * - :ref:`-(RA|RetryArchive) <RA>`
-     - forces re-archiving by passing :ref:`-RA <RA>` to `dsarch <https://gdex-docs-dsarch.readthedocs.io/en/latest/index.html>`_
+     - forces re-archiving by passing :ref:`-RA <RA>` to `dsarch <https://gdex-docs-dsarch.readthedocs.io>`_
    * - :ref:`-(RD|RetryDownload) <RD>`
      - re-downloads the remote file even if it already exists locally
    * - :ref:`-(RE|ResetEndTime) <RE>`
@@ -118,7 +118,7 @@ Additional notification recipients can be added via :ref:`-CC <CC>` (-CarbonCopy
 DSS specialists may use login names directly, e.g., ':ref:`-CC <CC>` zji schuster'.
 
 :ref:`-UF <UF>` can be run from the command line, via cron job, or through the daemon
-'dscheck' when local file records are linked to an update control record.
+`dscheck <https://gdex-docs-dscheck.readthedocs.io>`_ when local file records are linked to an update control record.
 Rather than supplying :ref:`Mode options <section4>` at run time, most can be pre-configured
 in the update control record.
 

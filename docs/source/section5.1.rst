@@ -16,7 +16,7 @@ Info Option -**BP** (-**BatchProcess**) (Aliases: -**d**, -**DelayedMode**) :
 
 delayed mode execution. When
 present, the **dsupdt** command is not executed immediately; instead, the command
-information is recorded in GDEXDB and executed later by the daemon 'dscheck'.
+information is recorded in GDEXDB and executed later by the daemon `dscheck <https://gdex-docs-dscheck.readthedocs.io>`_.
 One or more host names may be specified after :ref:`-BP <BP>` to restrict execution to
 specific hosts (or exclude them if prefixed with '!'). For example, '-d PBS'
 restricts execution to Portable Batch System (PBS) hosts. An upper limit on
@@ -89,7 +89,7 @@ Info Option -**LN** (-**LoginName**) :
 the login name of the executing specialist. Defaults to
 the current user. Set this option to run **dsupdt** on behalf of another
 specialist. If the provided name differs from the actual login, :ref:`-MD <MD>` is
-automatically applied when calling `dsarch <https://gdex-docs-dsarch.readthedocs.io/en/latest/index.html>`_.
+automatically applied when calling `dsarch <https://gdex-docs-dsarch.readthedocs.io>`_.
 
 
 .. _OF:
