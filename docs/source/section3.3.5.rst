@@ -66,7 +66,7 @@ on the command line via :ref:`Info option <section5>` :ref:`-AN <AN>` (-ActionNa
    * - :ref:`-(NY|NoLeapYear) <NY>`
      - skips February 29 for leap years
    * - :ref:`-(RA|RetryArchive) <RA>`
-     - forces re-archiving of local files by passing :ref:`-RA <RA>` to `dsarch <https://gdex-docs-dsarch.readthedocs.io/en/latest/index.html>`_
+     - forces re-archiving of local files by passing :ref:`-RA <RA>` to `dsarch <https://gdex-docs-dsarch.readthedocs.io>`_
    * - :ref:`-(RE|ResetEndTime) <RE>`
      - resets end date/hour when the file timestamp is newer than the end date/hour plus one update frequency
    * - :ref:`-(SE|SummaryEmail) <SE>`

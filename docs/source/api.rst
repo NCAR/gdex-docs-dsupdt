@@ -1,7 +1,4 @@
-API
-===
+API Reference
+=============
 
-.. autosummary::
-   :toctree: generated
-
-   lumache
+This section is reserved for auto-generated API reference documentation.

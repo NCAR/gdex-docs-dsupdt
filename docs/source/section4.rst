@@ -233,7 +233,7 @@ Mode Option -**RA** (-**RetryArchive**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 forces re-archiving of local files by passing :ref:`-RA <RA>`
-to `dsarch <https://gdex-docs-dsarch.readthedocs.io/en/latest/index.html>`_.
+to `dsarch <https://gdex-docs-dsarch.readthedocs.io>`_.
 
 
 .. _RD:

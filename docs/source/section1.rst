@@ -4,7 +4,7 @@
 1 - INTRODUCTION
 =================================
 
-**dsupdt** is a utility for performing periodic dataset updates by calling `dsarch <https://gdex-docs-dsarch.readthedocs.io/en/latest/index.html>`_
+**dsupdt** is a utility for performing periodic dataset updates by calling `dsarch <https://gdex-docs-dsarch.readthedocs.io>`_
 to archive data onto CISL Geoscience Data Exchange (GDEX) Servers.
 
 This application supports the following functions:
@@ -13,14 +13,14 @@ This application supports the following functions:
 * Download or retrieve data files from remote servers or other local machines
 * Call specialist-defined routines to validate and convert downloaded remote data files
 * Build local files from remote files, applying tar and/or compress operations automatically as needed
-* Archive local files onto GDEX Servers by calling `dsarch <https://gdex-docs-dsarch.readthedocs.io/en/latest/index.html>`_
+* Archive local files onto GDEX Servers by calling `dsarch <https://gdex-docs-dsarch.readthedocs.io>`_
 * Remove local and temporary files after data files have been archived successfully
 * Check availability of files on remote servers
-* Initiate update actions via the centralized daemon 'dscheck', via cron job, or manually
+* Initiate update actions via the centralized daemon `dscheck <https://gdex-docs-dscheck.readthedocs.io>`_, via cron job, or manually
 
-A dataset must be configured to work with `dsarch <https://gdex-docs-dsarch.readthedocs.io/en/latest/index.html>`_ before it can be set up for
-periodic updates by **dsupdt**. See the `dsarch <https://gdex-docs-dsarch.readthedocs.io/en/latest/index.html>`_ help document for information
-on placing a dataset under `dsarch <https://gdex-docs-dsarch.readthedocs.io/en/latest/index.html>`_ control.
+A dataset must be configured to work with `dsarch <https://gdex-docs-dsarch.readthedocs.io>`_ before it can be set up for
+periodic updates by **dsupdt**. See the `dsarch <https://gdex-docs-dsarch.readthedocs.io>`_ help document for information
+on placing a dataset under `dsarch <https://gdex-docs-dsarch.readthedocs.io>`_ control.
 
 Once update information is configured in GDEXDB, **dsupdt** downloads and archives
 data in the following steps:

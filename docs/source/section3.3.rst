@@ -20,7 +20,7 @@ steps. This section covers the following actions:
    * - :ref:`Process Both Files <section3.3.4>`
      - download and build in one step
    * - :ref:`Archive Local Files <section3.3.5>`
-     - archive local files to GDEX Servers via `dsarch <https://gdex-docs-dsarch.readthedocs.io/en/latest/index.html>`_
+     - archive local files to GDEX Servers via `dsarch <https://gdex-docs-dsarch.readthedocs.io>`_
    * - :ref:`Clean Temporary Files <section3.3.6>`
      - remove temporary files from the working area
    * - :ref:`Unlock Local Files <section3.3.7>`

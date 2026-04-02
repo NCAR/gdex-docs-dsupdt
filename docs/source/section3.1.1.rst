@@ -12,7 +12,7 @@ Action Option -**SC** (-**SetControl**) (Alias: -**SetUpdateControl**) :
 
 creates or modifies update
 control records in GDEXDB for a given dataset. These records schedule data
-update actions that are started automatically by the daemon 'dscheck'. One or
+update actions that are started automatically by the daemon `dscheck <https://gdex-docs-dscheck.readthedocs.io>`_. One or
 more control records may be set per execution.
 
 | **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(SC|SetControl) [:ref:`Mode Options <mode3.1.1>`]

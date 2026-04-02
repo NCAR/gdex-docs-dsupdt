@@ -55,7 +55,7 @@ Valid field names of local files and their corresponding :ref:`Info option <sect
      - local, original or source file names
    * - A
      - :ref:`-(AN|ActionName) <AN>`
-     - Action name for `dsarch <https://gdex-docs-dsarch.readthedocs.io/en/latest/index.html>`_
+     - Action name for `dsarch <https://gdex-docs-dsarch.readthedocs.io>`_
    * - I
      - :ref:`-(CI|ControlIndex) <CI>`
      - update control indices
