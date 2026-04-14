@@ -121,22 +121,6 @@ in the form YYYY-MM-DD HH:NN:SS. After a successful update, this time is
 advanced to the next period based on the control frequency and offset.
 
 
-.. _DC:
-
-Info Option -**DC** (-**DownloadCommand**) (Aliases: -**Command**, -**Download**) :
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-the command used to
-download a remote file, copy a local file, or generate a remote file via local
-processing. Can be set in both local and remote file records; used by
-:ref:`-DR <DR>` (-DownloadRemote). At run time, the command precedence is:
-
-.. list-table::
-   :widths: auto
-   :header-rows: 1
- command line > remote file record > local file record.
-
-
 .. _DB:
 
 Info Option -**DB** (-**Debug**) :
@@ -148,6 +132,18 @@ name. The debug level is required and may be a single integer (e.g., 1000 to
 log levels 1 through 1000) or a range (e.g., 200-1000). The default log path
 is '$DSSHOME/dssdb/log' and the default log file name is 'mydss.dbg'. Provide
 the second and third values to override these defaults.
+
+
+.. _DC:
+
+Info Option -**DC** (-**DownloadCommand**) (Aliases: -**Command**, -**Download**) :
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+the command used to
+download a remote file, copy a local file, or generate a remote file via local
+processing. Can be set in both local and remote file records; used by
+:ref:`-DR <DR>` (-DownloadRemote). At run time, the command precedence is
+command line, remote file record and local file record.
 
 
 .. _DE:
@@ -503,17 +499,6 @@ the wait time (in days or hours) before retrying an
 update control process after a failed attempt.
 
 
-.. _RO:
-
-Mode Option -**RO** (-**ResetOrder**) (Alias: -**Reorder**) :
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-when present, resets the execution
-order of the given local files to match the order in which the update records
-are provided for action :ref:`-SL <SL>` (-SetLocalFile). Local files can also be reordered
-by explicitly providing order index values via Info option :ref:`-XO <XO>` (-ExecOrder).
-
-
 .. _SF:
 
 Info Option -**SF** (-**ServerFile**) :
@@ -580,10 +565,10 @@ Info Option -**WD** (-**WorkDir**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 the working directory for staging temporary files during
-download and archive operations. The root path can be set via the environment
-variable $UPDTWKP, which defaults to '/glade/data02/dsswork' on machines with
-write access to /glade/data02. For example, '$UPDTWKP/zji/icoads' resolves to
-'/glade/data02/dsswork/zji/icoads'. To use a different root path, set the
+download and archive operations. A root path can be set via the environment
+variable $UPDTWKP. If it is set to '/lustre/gdex/work', '$UPDTWKP/zji/icoads'
+resolves to '/lustre/gdex/work/zji/icoads'. If $UPDTWKP is unset, the work
+directory is used as specified. To use a different root path, set the
 $UPDTWKP environment variable before running **dsupdt**.
 
 

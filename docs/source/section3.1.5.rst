@@ -25,9 +25,7 @@ remote file records may be processed per execution.
 |           [:ref:`-(TI|TimeInterval) <TI>` TimeInterval]
 |           [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
-.. _mode3.1.5:
-
-:ref:`Mode option <section4>` that can be specified for this action:
+Available mode option:
 
 .. list-table::
    :widths: auto

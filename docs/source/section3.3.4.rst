@@ -40,9 +40,7 @@ builds local files in a single action.
 |           [:ref:`-(CC|CarbonCopy) <CC>` Cc'dEmailAddresses]
 |           [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
-.. _mode3.3.4:
-
-:ref:`Mode options <section4>` that can be specified for this action:
+Available mode options:
 
 .. list-table::
    :widths: auto
