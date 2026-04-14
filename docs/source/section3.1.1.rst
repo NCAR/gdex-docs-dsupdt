@@ -37,9 +37,7 @@ more control records may be set per execution.
 |           [:ref:`-(CC|CarbonCopy) <CC>` Cc'dEmailAddresses]
 |           [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
-.. _mode3.1.1:
-
-:ref:`Mode options <section4>` that can be specified for this action:
+Available mode options:
 
 .. list-table::
    :widths: auto

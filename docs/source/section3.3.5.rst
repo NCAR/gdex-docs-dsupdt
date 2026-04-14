@@ -10,9 +10,9 @@
 Action Option -**AF** (-**ArchiveFile**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-an action to archive local files onto the GDEX
-Server according to the DSARCH action previously saved in GDEXDB or specified
-on the command line via :ref:`Info option <section5>` :ref:`-AN <AN>` (-ActionName).
+archives local files onto the GDEX Server according to
+the DSARCH action previously saved in GDEXDB or specified on the command line
+via :ref:`Info option <section5>` :ref:`-AN <AN>` (-ActionName).
 
 | **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(AF|ArchiveFile) [:ref:`Mode Options <mode3.3.5>`]
 |           [:ref:`-(CI|ControlIndex) <CI>` UpdateControlIndex]
@@ -33,9 +33,7 @@ on the command line via :ref:`Info option <section5>` :ref:`-AN <AN>` (-ActionNa
 |           [:ref:`-(CC|CarbonCopy) <CC>` Cc'dEmailAddresses]
 |           [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
-.. _mode3.3.5:
-
-:ref:`Mode options <section4>` that can be specified for this action:
+Available mode options:
 
 .. list-table::
    :widths: auto
@@ -50,7 +48,7 @@ on the command line via :ref:`Info option <section5>` :ref:`-AN <AN>` (-ActionNa
    * - :ref:`-(EE|ErrorEmail) <EE>`
      - sends email only when an error occurs during archiving
    * - :ref:`-(FU|ForceUpdate) <FU>`
-     - if present, forces archive for at least one end date/time, even if the update is not yet due
+     - forces archive for at least one end date/time, even if the update is not yet due
    * - :ref:`-(GZ|GMTZone) <GZ>`
      - uses GMT dates/times as controlling times
    * - :ref:`-(HU|HourlyUpdate) <HU>`
@@ -76,8 +74,8 @@ on the command line via :ref:`Info option <section5>` :ref:`-AN <AN>` (-ActionNa
    * - :ref:`-(UT|UpdateTime) <UT>`
      - forces an update of the data end time and next due update times regardless of whether archiving succeeds
 
-If a local file is not ready on the local disk, the archive action for this
-local file is skipped.
+If a local file is not ready on the local disk, the archive action for that
+file is skipped.
 
 
 

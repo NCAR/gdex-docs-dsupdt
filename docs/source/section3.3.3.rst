@@ -10,8 +10,8 @@
 Action Option -**BL** (-**BuildLocal**) (Alias: -**BuildLocalfile**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-an action to validate and convert
-remote files and build local files.
+validates and converts remote
+files and builds local files.
 
 | **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(BL|BuildLocal) [:ref:`Mode Options <mode3.3.3>`]
 |           [:ref:`-(CI|ControlIndex) <CI>` UpdateControlIndex]
@@ -34,9 +34,7 @@ remote files and build local files.
 |           [:ref:`-(CC|CarbonCopy) <CC>` Cc'dEmailAddresses]
 |           [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
-.. _mode3.3.3:
-
-:ref:`Mode options <section4>` that can be specified for this action:
+Available mode options:
 
 .. list-table::
    :widths: auto
@@ -51,7 +49,7 @@ remote files and build local files.
    * - :ref:`-(EE|ErrorEmail) <EE>`
      - sends email only when an error occurs during local file building
    * - :ref:`-(FU|ForceUpdate) <FU>`
-     - if present, forces build for at least one end date/time, even if the update is not yet due
+     - forces build for at least one end date/time, even if the update is not yet due
    * - :ref:`-(GZ|GMTZone) <GZ>`
      - uses GMT dates/times as controlling times
    * - :ref:`-(HU|HourlyUpdate) <HU>`

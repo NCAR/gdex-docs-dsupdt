@@ -109,7 +109,7 @@ Info Option -**ON** (-**OrderNames**) :
 
 a string of single-letter field names that determines the
 sort order of GET action results (:ref:`-GC <GC>`, :ref:`-GL <GL>`, :ref:`-GR <GR>`). Uppercase letters sort
-ascending; lowercase sort descending.
+ascending; lowercase letters sort descending.
 
 
 .. _PL:

@@ -30,9 +30,7 @@ including files that have already been archived or have become outdated.
 |           [:ref:`-(CC|CarbonCopy) <CC>` Cc'dEmailAddresses]
 |           [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
-.. _mode3.3.6:
-
-:ref:`Mode options <section4>` that can be specified for this action:
+Available mode options:
 
 .. list-table::
    :widths: auto
@@ -47,7 +45,7 @@ including files that have already been archived or have become outdated.
    * - :ref:`-(EE|ErrorEmail) <EE>`
      - sends email only when an error occurs during local file cleaning
    * - :ref:`-(FU|ForceUpdate) <FU>`
-     - if present, forces clean for at least one end date/time, even if the update is not yet due
+     - forces clean for at least one end date/time, even if the update is not yet due
    * - :ref:`-(GZ|GMTZone) <GZ>`
      - uses GMT dates/times as controlling times
    * - :ref:`-(HU|HourlyUpdate) <HU>`

@@ -70,9 +70,9 @@ The description of an individual option is displayed when **dsupdt** is run as
 
 The description is shown for the option placed either before or after -(h|help).
 If no option is given, or **dsupdt** is run without arguments, the full document
-is displayed using the UNIX 'more' utility. A printed copy of this document is
-available at $DSSHOME/dssdb/prog_usage/dsupdt.usg, where $DSSHOME is the
-environment variable for the DSS home directory.
+is displayed using the UNIX 'more' utility. A hard copy of this document
+can be printed from the saved file, dsupdt.usg, in the Python package
+rda_python_dsupdt.
 
 
 

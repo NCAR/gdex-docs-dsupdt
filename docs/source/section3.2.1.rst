@@ -22,9 +22,7 @@ and :ref:`-GR <GR>` (-GetRemoteFile) into a single action.
 |           [:ref:`-(OF|OutputFile) <OF>` OutputFileName]
 |           [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
-.. _mode3.2.1:
-
-:ref:`Mode option <section4>` that can be specified for this action:
+Available mode option:
 
 .. list-table::
    :widths: auto
@@ -45,9 +43,9 @@ into **dsupdt** via :ref:`-SA <SA>` (-SetAll) to apply changes to GDEXDB.
 
 **EXAMPLE 5. To retrieve all update control, local file, and remote file information for d277000 at control index 2:**
 
-| **dsupdt** d277000 :ref:`GA <GA>` :ref:`-CI <CI>` 2 :ref:`-OF <OF>` d277000.c1
+| **dsupdt** d277000 :ref:`GA <GA>` :ref:`-CI <CI>` 2 :ref:`-OF <OF>` d277000.all
 
-Content of output file d277000.c1:
+Content of output file d277000.all:
 
 .. code-block:: none
 

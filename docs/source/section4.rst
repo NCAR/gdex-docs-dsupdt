@@ -33,9 +33,9 @@ display is suppressed for both standard output and errors.
 Mode Option -**CA** (-**CheckAll**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-if present, allows check update actions :ref:`-CU <CU>` (-CheckUpdate)
-to verify availability of all remote files. Without it, checking stops after
-the first unavailable file.
+allows check update action :ref:`-CU <CU>` (-CheckUpdate) to verify
+availability of all remote files. Without it, checking stops after the first
+unavailable file.
 
 
 .. _CN:
@@ -66,9 +66,8 @@ correctly.
 Mode Option -**CP** (-**CurrentPeriod**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-if present, allows update actions when the current
-date/hour falls within the current update period, even if the data end
-date/hour is not yet due.
+allows update actions when the current date/hour falls
+within the current update period, even if the data end date/hour is not yet due.
 
 
 .. _EE:
@@ -94,8 +93,8 @@ in a given field share the same dynamically calculated column width.
 Mode Option -**FU** (-**FutureUpdate**) (Alias: -**ForceUpdate**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-if present, forces update for at least one end date/time,
-even if the update is not yet due.
+forces update for at least one end date/time, even if
+the update is not yet due.
 
 
 .. _GZ:
@@ -250,8 +249,8 @@ file if it already exists locally, for :ref:`Action <section3>` :ref:`-DR <DR>` 
 Mode Option -**RE** (-**ResetEndTime**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-if present, resets the end date/hour when the file
-timestamp is newer than the end date/hour plus one update frequency.
+resets the end date/hour when the file timestamp is
+newer than the end date/hour plus one update frequency.
 
 
 .. _RO:
@@ -259,10 +258,10 @@ timestamp is newer than the end date/hour plus one update frequency.
 Mode Option -**RO** (-**ResetOrder**) (Alias: -**Reorder**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-when present, resets the execution
-order of the given local files to match the order in which the update records
-are provided for action :ref:`-SL <SL>` (-SetLocalFile). Local files can also be reordered
-by explicitly providing order index values via :ref:`Info option <section5>` :ref:`-XO <XO>` (-ExecOrder).
+resets execution order indices to match
+the sequence in which local files are provided to :ref:`-SL <SL>` (-SetLocalFile).
+Alternatively, explicit order indices can be supplied via :ref:`-XO <XO>` (-ExecOrder);
+valid order index values are 1, 2, 3, ...
 
 
 .. _SE:
@@ -279,9 +278,8 @@ omitting detailed log information.
 Mode Option -**UB** (-**UseBeginTime**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-when present, uses the beginning time of the update
-period to replace temporal patterns in file names, download commands, and
-other fields.
+uses the beginning time of the update period to replace
+temporal patterns in file names, download commands, and other fields.
 
 
 .. _UT:
@@ -289,9 +287,8 @@ other fields.
 Mode Option -**UT** (-**UpdateTime**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-when present, forces an update of the data end time and
-next due update times in local file records, regardless of whether the update
-actions succeed.
+forces an update of the data end time and next due update
+times in local file records, regardless of whether the update actions succeed.
 
 
 

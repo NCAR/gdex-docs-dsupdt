@@ -40,9 +40,7 @@ execution.
 |           [:ref:`-(DE|Description) <DE>` FileDescription]
 |           [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
-.. _mode3.1.3:
-
-:ref:`Mode options <section4>` that can be specified for this action:
+Available mode options:
 
 .. list-table::
    :widths: auto

@@ -18,9 +18,7 @@ remote file records for a given dataset. It combines :ref:`-SC <SC>` (-SetContro
 |            :ref:`-(IF|InputFile) <IF>` Input Files
 |           [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
-.. _mode3.2.2:
-
-:ref:`Mode option <section4>` that can be specified for this action:
+Available mode options:
 
 .. list-table::
    :widths: auto

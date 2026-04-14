@@ -42,9 +42,7 @@ up temporary data files generated during the update procedure.
 |            [:ref:`-(CC|CarbonCopy) <CC>` Cc'dEmailAddresses]
 |            [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
-.. _mode3.3.1:
-
-:ref:`Mode options <section4>` that can be specified for this action:
+Available mode options:
 
 .. list-table::
    :widths: auto
@@ -87,9 +85,9 @@ up temporary data files generated during the update procedure.
    * - :ref:`-(RD|RetryDownload) <RD>`
      - re-downloads the remote file even if it already exists locally
    * - :ref:`-(RE|ResetEndTime) <RE>`
-     - if present, resets end date/hour based on the local file timestamp
+     - resets end date/hour based on the local file timestamp
    * - :ref:`-(SE|SummaryEmail) <SE>`
-     - send a summary email to the specialist after update without detail logging information
+     - sends a summary email to the specialist after update without detail logging information
    * - :ref:`-(UB|UseBeginTime) <UB>`
      - uses the period's beginning time instead of end time when substituting temporal patterns
    * - :ref:`-(UT|UpdateTime) <UT>`
