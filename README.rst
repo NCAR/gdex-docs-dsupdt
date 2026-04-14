@@ -11,4 +11,4 @@ https://github.com/NCAR/rda-python-dsupdt
 
 The latest documentation for this repo can be viewed at
 
-https://gdex-docs-dsupdt.readthedocs.io/en/latest/index.html
+https://gdex-docs-dsupdt.readthedocs.io
