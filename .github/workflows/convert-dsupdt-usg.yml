@@ -27,7 +27,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-          pgrst -d ${{ github.workspace }}/docs/source -u dsupdt/src/rda_python_dsupdt/dsupdt.usg -p dsupdt/src/rda_python_dsupdt/pg_arch.py
+          pgrst -d ${{ github.workspace }}/docs/source -u dsupdt/src/rda_python_dsupdt/dsupdt.usg -p dsupdt/src/rda_python_dsupdt/pg_updt.py
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v8
