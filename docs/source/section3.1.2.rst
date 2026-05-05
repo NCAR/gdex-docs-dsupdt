@@ -10,14 +10,14 @@
 Action Option -**GC** (-**GetControl**) (Alias: -**GetUpdateControl**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-retrieves update control
+(Alias: -GetUpdateControl) retrieves update control
 records for a given dataset.
 
 | **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(GC|GetControl) [:ref:`Mode Option <mode3.1.2>`]
 |           [:ref:`-(FN|FieldNames) <FN>` FieldNameString]
 |           [:ref:`-(CI|ControlIndex) <CI>` UpdateControlIndices]
 |           [:ref:`-(ID|ControlID) <ID>` ControlIdString]
-|           [:ref:`-(SN|Specialist) <SN>` DSSSpecialist]
+|           [:ref:`-(SN|Specialist) <SN>` GDEXSpecialist]
 |           [:ref:`-(PI|ParentIndex) <PI>` ParentControlIndices]
 |           [:ref:`-(AN|ActionName) <AN>` DSUPDTActionNames]
 |           [:ref:`-(FQ|Frequency) <FQ>` UpdateControlFrequencies]
@@ -26,7 +26,7 @@ records for a given dataset.
 |           [:ref:`-(OF|OutputFile) <OF>` OutputFileName]
 |           [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
-Available mode option:
+Available :ref:`Mode option <section4>`:
 
 .. list-table::
    :widths: auto
@@ -36,10 +36,11 @@ Available mode option:
      - formats each column to a uniform fixed width
 
 Use :ref:`Info option <section5>` :ref:`-FN <FN>` (-FieldNames) to specify which control fields to
-retrieve. It defaults to 'CLNPAFOTRVUJEKZ' if option :ref:`-FN <FN>` is not provided.
-Update information of all available fields is retrieved if :ref:`-FN <FN>` ALL is given.
+retrieve. The default is 'CLNPAFOTRVUJEKZ' when :ref:`-FN <FN>` is not provided. To
+return every available field, supply :ref:`-FN <FN>` ALL.
 
-Valid field names of update controls and their corresponding :ref:`Info option <section5>` names:
+Valid field names of update controls and their corresponding :ref:`Info <section5>` option
+names:
 
 .. list-table::
    :widths: auto
@@ -56,7 +57,7 @@ Valid field names of update controls and their corresponding :ref:`Info option <
      - descriptive id for a control record
    * - N
      - :ref:`-(SN|Specialist) <SN>`
-     - DSS specialist who owns the control record
+     - GDEX specialist who owns the control record
    * - P
      - :ref:`-(PI|ParentIndex) <PI>`
      - parent index, refers to a dcupdt.cindex if not 0
@@ -109,9 +110,9 @@ Valid field names of update controls and their corresponding :ref:`Info option <
      - :ref:`-(XC|ExecuteCommand) <XC>`
      - Command to be executed after successful update
 
-If no dataset number is given, update control information is displayed for all
-available control records across all datasets owned by the specialist running
-**dsupdt**.
+When no dataset number is supplied, update control information is shown for
+all available control records across every dataset owned by the specialist
+running **dsupdt**.
 
 
 .. _3.1.2_e2:

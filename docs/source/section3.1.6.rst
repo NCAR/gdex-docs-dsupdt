@@ -10,8 +10,8 @@
 Action Option -**GR** (-**GetRemoteFile**) (Alias: -**GetRemote**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-retrieves remote file update
-records matching the specified conditions.
+(Alias: -GetRemote) retrieves remote file update
+records that match the specified conditions.
 
 | **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(GR|GetRemoteFile) [:ref:`Mode Option <mode3.1.6>`]
 |           [:ref:`-(FN|FieldNames) <FN>` FieldNameString]
@@ -23,7 +23,7 @@ records matching the specified conditions.
 |           [:ref:`-(OF|OutputFile) <OF>` OutputFileName]
 |           [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
-Available mode option:
+Available :ref:`Mode option <section4>`:
 
 .. list-table::
    :widths: auto
@@ -33,7 +33,7 @@ Available mode option:
      - formats each column to a uniform fixed width
 
 Use :ref:`-FN <FN>` (-FieldNames) to specify which remote file fields to retrieve.
-Defaults to 'LFDSCBET'.
+The default is 'LFDSCBET'.
 
 Valid remote file field names and their corresponding :ref:`Info options <section5>`:
 
@@ -69,8 +69,8 @@ Valid remote file field names and their corresponding :ref:`Info options <sectio
      - :ref:`-(TI|TimeInterval) <TI>`
      - for remote file names, i.e., 2H, 5D
 
-If no dataset number is given, remote file update information for all datasets
-owned by the specialist running **dsupdt** is displayed.
+When no dataset number is given, remote file update information is
+displayed for every dataset owned by the specialist running **dsupdt**.
 
 
 

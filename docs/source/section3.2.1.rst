@@ -11,8 +11,8 @@ Action Option -**GA** (-**GetALL**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 retrieves all update control, local file, and remote file
-records for a given dataset. It combines :ref:`-GC <GC>` (-GetControl), :ref:`-GL <GL>` (-GetLocalFile),
-and :ref:`-GR <GR>` (-GetRemoteFile) into a single action.
+records for a given dataset. It combines :ref:`-GC <GC>` (-GetControl),
+:ref:`-GL <GL>` (-GetLocalFile), and :ref:`-GR <GR>` (-GetRemoteFile) into a single action.
 
 | **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(GA|GetAll) [:ref:`Mode Option <mode3.2.1>`]
 |           [:ref:`-(CI|ControlIndex) <CI>` UpdateControlIndices]
@@ -22,7 +22,7 @@ and :ref:`-GR <GR>` (-GetRemoteFile) into a single action.
 |           [:ref:`-(OF|OutputFile) <OF>` OutputFileName]
 |           [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
-Available mode option:
+Available :ref:`Mode option <section4>`:
 
 .. list-table::
    :widths: auto
@@ -31,12 +31,13 @@ Available mode option:
    * - :ref:`-(FO|FormatOutput) <FO>`
      - formats each column to a uniform fixed width
 
-Output is sectioned under [DCUPDT] for update controls, [DLUPDT] for local
-files, and [DRUPDT] for remote files.
+Output is sectioned under [DCUPDT] for update controls, [DLUPDT] for
+local files, and [DRUPDT] for remote files.
 
-Use :ref:`-OF <OF>` (-OutputFile) to save the retrieved information to a file. Without
-it, results are printed to screen. The output file can be edited and fed back
-into **dsupdt** via :ref:`-SA <SA>` (-SetAll) to apply changes to GDEXDB.
+Use :ref:`-OF <OF>` (-OutputFile) to save the retrieved information to a file.
+Without it, results are printed to the screen. The output file can be
+edited and fed back into **dsupdt** via :ref:`-SA <SA>` (-SetAll) to apply changes to
+GDEXDB.
 
 
 .. _3.2.1_e5:
@@ -60,8 +61,8 @@ Content of output file d277000.all:
  LocalIndex<:>LocalFile<:>RemoteFile<:>ExecOrder<:>DownloadOrder<:>ServerFile<:>DownloadCommand<:>BeginTime<:>EndTime<:>TimeInterval<:>
  51<:>oisst.<YYYY>.asc.gz<:>oisst.<YYYY>.asc.Z<:>1<:>0<:><:><:><:><:><:>
 
-This example shows a weekly update of a local file with remote file name
-different from the local file name.
+This example shows a weekly update of a local file whose remote file name
+differs from the local file name.
 
 
 

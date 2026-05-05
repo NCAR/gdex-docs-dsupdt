@@ -10,8 +10,8 @@
 Action Option -**PB** (-**ProcessBoth**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-downloads remote files then validates, converts, and
-builds local files in a single action.
+downloads remote files and then validates, converts,
+and builds local files in a single action.
 
 | **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(PB|ProcessBoth) [:ref:`Mode Options <mode3.3.4>`]
 |           [:ref:`-(CI|ControlIndex) <CI>` UpdateControlIndex]
@@ -40,7 +40,7 @@ builds local files in a single action.
 |           [:ref:`-(CC|CarbonCopy) <CC>` Cc'dEmailAddresses]
 |           [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
-Available mode options:
+Available :ref:`Mode options <section4>`:
 
 .. list-table::
    :widths: auto
@@ -51,7 +51,7 @@ Available mode options:
    * - :ref:`-(BG|BackGround) <BG>`
      - background process; suppresses screen display of standard output and errors
    * - :ref:`-(CN|CheckNewer) <CN>`
-     - when the server file is available locally, checks if it has changed on the server and re-downloads if so
+     - when the server file is available locally, checks whether it has changed on the server and re-downloads if so
    * - :ref:`-(CP|CurrentPeriod) <CP>`
      - allows the end date/hour to be processed beyond the current date/hour if it falls within the current update period
    * - :ref:`-(EE|ErrorEmail) <EE>`
@@ -67,11 +67,11 @@ Available mode options:
    * - :ref:`-(KR|KeepRemote) <KR>`
      - copies rather than moves the remote file to the local file location, preserving the remote file on disk
    * - :ref:`-(KS|KeepServer) <KS>`
-     - keeps server file on local disk by copying it to the remote file location instead of moving it
+     - keeps the server file on local disk by copying it to the remote file location instead of moving it
    * - :ref:`-(MO|MissedOnly) <MO>`
-     - processes data file only if it has not been archived yet
+     - processes a data file only if it has not been archived yet
    * - :ref:`-(LO|LogOn) <LO>`
-     - turns on detail logging when option :ref:`-PL <PL>` is present
+     - enables detailed logging when :ref:`-PL <PL>` is present
    * - :ref:`-(MU|MultipleUpdate) <MU>`
      - downloads and builds across all available update periods
    * - :ref:`-(NE|NoEmail) <NE>`
@@ -85,7 +85,7 @@ Available mode options:
    * - :ref:`-(SE|SummaryEmail) <SE>`
      - sends a summary-only email after the action, without detailed log information
    * - :ref:`-(UB|UseBeginTime) <UB>`
-     - uses the period's beginning time instead of end time when substituting temporal patterns
+     - uses the period's beginning time instead of the end time when substituting temporal patterns
 
 
 

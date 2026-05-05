@@ -10,10 +10,10 @@
 Action Option -**DR** (-**DownloadRemote**) (Alias: -**DownloadRemoteFile**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-downloads or copies server
-files to local working disk, or generates new data files via local processing.
-The resulting files are called remote files and are later validated and
-converted to local files by :ref:`-BL <BL>` (-BuildLocal).
+(Alias: -DownloadRemoteFile) downloads or copies
+server files to local working disk, or generates new data files via local
+processing. The resulting files are called remote files; they are later
+validated and converted to local files by :ref:`-BL <BL>` (-BuildLocal).
 
 | **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(DR|DownloadRemote) [:ref:`Mode Options <mode3.3.2>`]
 |           [:ref:`-(CI|ControlIndex) <CI>` UpdateControlIndex]
@@ -41,7 +41,7 @@ converted to local files by :ref:`-BL <BL>` (-BuildLocal).
 |           [:ref:`-(CC|CarbonCopy) <CC>` Cc'dEmailAddresses]
 |           [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
-Available mode options:
+Available :ref:`Mode options <section4>`:
 
 .. list-table::
    :widths: auto
@@ -50,15 +50,15 @@ Available mode options:
    * - :ref:`-(AW|AnyWhere) <AW>`
      - works with :ref:`-BP <BP>` (-BatchProcess) to allow the recorded **dsupdt** command to start from any directory
    * - :ref:`-(BG|BackGround) <BG>`
-     - runs in background; suppresses screen output and errors
+     - runs in the background; suppresses screen output and errors
    * - :ref:`-(CN|CheckNewer) <CN>`
-     - when the server file is available locally, checks if the file has changed on the server and re-downloads it if so
+     - when the server file is available locally, checks whether it has changed on the server and re-downloads if so
    * - :ref:`-(CP|CurrentPeriod) <CP>`
      - allows the end date/hour to be processed beyond the current date/hour if it falls within the current update period
    * - :ref:`-(EE|ErrorEmail) <EE>`
      - sends email only when an error occurs during retrieval of remote files
    * - :ref:`-(FU|ForceUpdate) <FU>`
-     - forces download for at least one end date/time, even if the update is not yet due
+     - forces a download for at least one end date/time, even if the update is not yet due
    * - :ref:`-(GZ|GMTZone) <GZ>`
      - uses GMT dates/times as controlling times
    * - :ref:`-(HU|HourlyUpdate) <HU>`
@@ -66,11 +66,11 @@ Available mode options:
    * - :ref:`-(IE|IgnoreError) <IE>`
      - works with :ref:`-MU <MU>` (-MultipleUpdate) to skip download errors and continue with remaining remote files
    * - :ref:`-(KS|KeepServer) <KS>`
-     - keeps server file on local disk by copying it to the remote file location instead of moving it
+     - keeps the server file on local disk by copying it to the remote file location instead of moving it
    * - :ref:`-(LO|LogOn) <LO>`
-     - turns on detail logging when option :ref:`-PL <PL>` is present
+     - enables detailed logging when option :ref:`-PL <PL>` is present
    * - :ref:`-(MO|MissedOnly) <MO>`
-     - downloads remote file only if it has not been archived yet
+     - downloads a remote file only if it has not been archived yet
    * - :ref:`-(MU|MultipleUpdate) <MU>`
      - downloads across all available update periods; without this option, only one period is processed
    * - :ref:`-(NE|NoEmail) <NE>`
@@ -84,11 +84,11 @@ Available mode options:
    * - :ref:`-(SE|SummaryEmail) <SE>`
      - sends a summary-only email after the action, without detailed log information
    * - :ref:`-(UB|UseBeginTime) <UB>`
-     - uses the period's beginning time instead of end time when substituting temporal patterns
+     - uses the period's beginning time instead of the end time when substituting temporal patterns
 
-If a remote file already exists on local disk, the download action is skipped.
-To re-download, either remove the existing file manually or use :ref:`Mode <section4>` option
-:ref:`-RD <RD>` (-RetryDownload).
+When a remote file already exists on local disk, the download action is
+skipped. To re-download, either remove the existing file manually or use
+:ref:`Mode option <section4>` :ref:`-RD <RD>` (-RetryDownload).
 
 A server file is the original file on the remote server. Specify it only
 when its name differs from the remote file name.

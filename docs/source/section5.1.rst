@@ -4,9 +4,9 @@
 5.1 - Single-Value Info Options
 =================================
 
-A single-value Info option passes exactly one value into this application.
-Exactly one value must follow each such option; providing no value or more
-than one value will result in an error.
+A single-value Info option passes exactly one value into this
+application. Exactly one value must follow each such option; providing
+no value or more than one value results in an error.
 
 
 .. _BP:
@@ -14,14 +14,15 @@ than one value will result in an error.
 Info Option -**BP** (-**BatchProcess**) (Aliases: -**d**, -**DelayedMode**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-delayed mode execution. When
-present, the **dsupdt** command is not executed immediately; instead, the command
-information is recorded in GDEXDB and executed later by the daemon `dscheck <https://gdex-docs-dscheck.readthedocs.io>`_.
-One or more host names may be specified after :ref:`-BP <BP>` to restrict execution to
-specific hosts (or exclude them if prefixed with '!'). For example, '-d PBS'
-restricts execution to Portable Batch System (PBS) hosts. An upper limit on
-retry attempts (1 to 99) can also be specified; for example, '-d 2' limits
-retries to 2. If not specified, the default retry count is 1.
+(Alias: -d, -DelayedMode) — delayed mode execution.
+When present, the **dsupdt** command is not executed immediately; instead,
+the command information is recorded in GDEXDB and executed later by the
+daemon `dscheck <https://gdex-docs-dscheck.readthedocs.io>`_. One or more host names may be specified after :ref:`-BP <BP>` to
+restrict execution to specific hosts (or to exclude them when prefixed
+with '!'). For example, '-d PBS' restricts execution to Portable Batch
+System (PBS) hosts. An upper limit on retry attempts (1 to 99) can also
+be specified; for example, '-d 2' limits retries to 2. If not specified,
+the default retry count is 1.
 
 
 .. _CD:
@@ -29,9 +30,9 @@ retries to 2. If not specified, the default retry count is 1.
 Info Option -**CD** (-**CurrentDate**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-provides an alternative current date for update actions.
-This allows specialists to rerun an update for re-archiving or recovering a
-deleted update action.
+provides an alternative current date for update
+actions. This allows specialists to rerun an update for re-archiving or
+recovering a deleted update action.
 
 
 .. _CH:
@@ -39,9 +40,9 @@ deleted update action.
 Info Option -**CH** (-**CurrentHour**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-provides an alternative current hour for update actions.
-This allows specialists to rerun an update for re-archiving or recovering a
-deleted update action.
+provides an alternative current hour for update
+actions. This allows specialists to rerun an update for re-archiving or
+recovering a deleted update action.
 
 
 .. _DS:
@@ -49,7 +50,7 @@ deleted update action.
 Info Option -**DS** (-**Dataset**) (Aliases: -**Dsid**, -**DatasetID**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-the dataset ID in the format [a-z]NNNNNN.
+— the dataset ID in the format [a-z]NNNNNN.
 
 
 .. _DV:
@@ -57,8 +58,9 @@ the dataset ID in the format [a-z]NNNNNN.
 Info Option -**DV** (-**Divider**) (Aliases: -**Delimiter**, -**Separator**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-delimiter for separating
-column values of multi-value Info options in input files. Defaults to '<:>'.
+(Alias: -Delimiter, -Separator) — delimiter for
+separating column values of multi-value Info options in input files.
+Defaults to '<:>'.
 
 
 .. _ES:
@@ -66,8 +68,8 @@ column values of multi-value Info options in input files. Defaults to '<:>'.
 Info Option -**ES** (-**EqualSign**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-sets the delimiter used to assign values to options in
-input files. Defaults to '<=>'.
+sets the delimiter used to assign values to options
+in input files. Defaults to '<=>'.
 
 
 .. _FN:
@@ -75,10 +77,10 @@ input files. Defaults to '<=>'.
 Info Option -**FN** (-**FieldNames**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-a string of single-letter field names specifying which
-fields to retrieve via :ref:`-GL <GL>` (-GetLocalFile) or :ref:`-GR <GR>` (-GetRemoteFile). Omitting
-this option returns the default fields. Valid names are listed in each
-action's section.
+— a string of single-letter field names specifying
+which fields to retrieve via :ref:`-GL <GL>` (-GetLocalFile) or :ref:`-GR <GR>` (-GetRemoteFile).
+Omitting this option returns the default fields. Valid names are listed
+in each action's section.
 
 
 .. _LN:
@@ -86,10 +88,10 @@ action's section.
 Info Option -**LN** (-**LoginName**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-the login name of the executing specialist. Defaults to
-the current user. Set this option to run **dsupdt** on behalf of another
-specialist. If the provided name differs from the actual login, :ref:`-MD <MD>` is
-automatically applied when calling `dsarch <https://gdex-docs-dsarch.readthedocs.io>`_.
+— the login name of the executing specialist.
+Defaults to the current user. Set this option to run **dsupdt** on behalf
+of another specialist. If the provided name differs from the actual
+login, :ref:`-MD <MD>` is automatically applied when calling `dsarch <https://gdex-docs-dsarch.readthedocs.io>`_.
 
 
 .. _OF:
@@ -97,9 +99,9 @@ automatically applied when calling `dsarch <https://gdex-docs-dsarch.readthedocs
 Info Option -**OF** (-**OutputFile**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-specifies an output file name into which this application
-writes its results. The output format matches the input file format. If not
-specified, results are displayed on screen.
+specifies an output file name into which this
+application writes its results. The output format matches the input
+file format. If not specified, results are displayed on screen.
 
 
 .. _ON:
@@ -107,9 +109,9 @@ specified, results are displayed on screen.
 Info Option -**ON** (-**OrderNames**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-a string of single-letter field names that determines the
-sort order of GET action results (:ref:`-GC <GC>`, :ref:`-GL <GL>`, :ref:`-GR <GR>`). Uppercase letters sort
-ascending; lowercase letters sort descending.
+— a string of single-letter field names that
+determines the sort order of GET action results (:ref:`-GC <GC>`, :ref:`-GL <GL>`, :ref:`-GR <GR>`).
+Uppercase letters sort ascending; lowercase letters sort descending.
 
 
 .. _PL:
@@ -117,10 +119,11 @@ ascending; lowercase letters sort descending.
 Info Option -**PL** (-**ProcessLimit**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-defaults to 1. When set to a value greater than 1,
-**dsupdt** spawns that many child processes, each handling one update record in
-parallel. The parent process exits once all records are handled. Useful for
-datasets with many independent, time-consuming update records.
+— defaults to 1. When set to a value greater than
+1, **dsupdt** spawns that many child processes, each handling one update
+record in parallel. The parent process exits once all records are
+handled. Useful for datasets with many independent, time-consuming
+update records.
 
 
 .. _AO:
@@ -128,8 +131,8 @@ datasets with many independent, time-consuming update records.
 Info Option -**AO** (-**ActOption**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-sets the marker used to designate :ref:`Action <section3>` and :ref:`Mode <section4>` options
-in input files. Defaults to '<!>'.
+sets the marker used to designate :ref:`Action <section3>` and :ref:`Mode <section4>`
+options in input files. Defaults to '<!>'.
 
 
 .. _VS:
@@ -137,8 +140,9 @@ in input files. Defaults to '<!>'.
 Info Option -**VS** (-**ValidSize**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-the minimum file size considered valid for archiving.
-Defaults to 100 bytes. Can be overridden on the command line at run time.
+— the minimum file size considered valid for
+archiving. Defaults to 100 bytes. Can be overridden on the command line
+at run time.
 
 
 
