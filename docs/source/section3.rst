@@ -4,19 +4,19 @@
 3 - ACTION OPTIONS
 =================================
 
-Action options specify what tasks **dsupdt** executes. No values follow Action
-options. Depending on the chosen Action, multiple tasks may be processed in a
-single execution. Some comprehensive actions automatically include simpler
-actions by default; others include additional actions when certain :ref:`Mode <section4>` options
-are present. Only one Action option may be specified per execution; providing
-multiple Action options simultaneously is not permitted.
+Action options specify the tasks that **dsupdt** will execute. No values follow
+Action options. Depending on the chosen Action, multiple tasks may be
+processed in a single execution. Some comprehensive actions automatically
+include simpler actions by default; others include additional actions when
+certain :ref:`Mode options <section4>` are present. Only one Action option may be specified per
+execution; supplying multiple Action options simultaneously is not permitted.
 
-Some actions write information to GDEXDB; others retrieve it. Most actions target
-a single dataset, but some can operate across all datasets when no dataset
-number is provided.
+Some actions write information to GDEXDB; others retrieve it. Most actions
+target a single dataset, but some can operate across all datasets when no
+dataset number is provided.
 
-Actions are grouped into three categories based on the type of information they
-handle:
+Actions are organized into three categories based on the type of information
+they handle:
 
 .. list-table::
    :widths: auto
@@ -27,7 +27,7 @@ handle:
    * - :ref:`All Information Actions <section3.2>`
      - retrieve and modify all update control, local file, and remote file records for a specified dataset in a single operation
    * - :ref:`Update Actions <section3.3>`
-     - download remote files, build local files, archive local files onto GDEX Servers, clean temporary data files, check update status of files on remote servers, and unlock update controls or local files that are locked by aborted update processes.
+     - download remote files, build local files, archive local files onto the GDEX Servers, clean temporary data files, check the update status of files on remote servers, and unlock update controls or local files held by aborted update processes
 
 .. toctree::
    :maxdepth: 2

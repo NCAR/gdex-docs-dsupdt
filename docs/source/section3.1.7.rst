@@ -10,7 +10,7 @@
 Action Option -**DL** (-**Delete**) (Aliases: -**RM**, -**Remove**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-deletes one or more update control,
+(Alias: -RM|-Remove) deletes one or more update control,
 local file, or remote file records from GDEXDB.
 
 | **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(DL|Delete) [:ref:`Mode Option <mode3.1.7>`]
@@ -29,7 +29,7 @@ local file, or remote file records from GDEXDB.
 |           [:ref:`-(DO|DownloadOrder) <DO>` DownloadOrderIndices]
 |           [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
-Available mode option:
+Available :ref:`Mode option <section4>`:
 
 .. list-table::
    :widths: auto
@@ -38,10 +38,10 @@ Available mode option:
    * - :ref:`-(MD|MyDataset) <MD>`
      - deletes records regardless of dataset ownership
 
-Provide a control index to delete an update control record. Provide a local
-file index to delete a local file record and all its associated remote file
-records. To delete only a specific remote file record, provide both the local
-file index and the remote file name.
+Provide a control index to delete an update control record. Provide a
+local file index to delete a local file record together with all of its
+associated remote file records. To delete only a specific remote file
+record, provide both the local file index and the remote file name.
 
 
 

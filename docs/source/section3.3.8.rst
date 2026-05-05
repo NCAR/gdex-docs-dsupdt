@@ -10,9 +10,10 @@
 Action Option -**CU** (-**CheckUpdate**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-checks whether remote files are available for retrieval.
-This is useful when remote data files become available irregularly but are
-organized into files covering regular temporal periods.
+verifies whether remote files are available for
+retrieval. This is useful when remote data files become available
+irregularly but are organized into files covering regular temporal
+periods.
 
 | **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(CU|CheckUpdate) [:ref:`Mode Options <mode3.3.8>`]
 |           [:ref:`-(LI|LocalIndex) <LI>` LocalFileIndices]
@@ -35,7 +36,7 @@ organized into files covering regular temporal periods.
 |           [:ref:`-(CC|CarbonCopy) <CC>` Cc'dEmailAddresses]
 |           [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
-Available mode options:
+Available :ref:`Mode options <section4>`:
 
 .. list-table::
    :widths: auto
@@ -54,10 +55,10 @@ Available mode options:
    * - :ref:`-(SE|SummaryEmail) <SE>`
      - sends a summary-only email with update status, without detailed log information
    * - :ref:`-(UB|UseBeginTime) <UB>`
-     - uses the period's beginning time instead of end time when substituting temporal patterns
+     - uses the period's beginning time instead of the end time when substituting temporal patterns
 
-When executed without additional conditions, all datasets due for updates are
-checked for update status.
+When executed without additional conditions, every dataset due for
+updates is checked for update status.
 
 
 

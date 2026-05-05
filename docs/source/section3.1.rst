@@ -12,17 +12,17 @@ modified, viewed, or deleted via the actions in this section:
    :header-rows: 0
 
    * - :ref:`Set Update Controls <section3.1.1>`
-     - create or modify information of update control records for a given dataset
+     - create or modify update control records for a given dataset
    * - :ref:`Get Update Controls <section3.1.2>`
-     - retrieve information of update control records for one or all datasets
+     - retrieve update control records for one or all datasets
    * - :ref:`Set Local Files <section3.1.3>`
-     - create or modify information of local file records for a given dataset
+     - create or modify local file records for a given dataset
    * - :ref:`Get Local Files <section3.1.4>`
-     - retrieve information of local file records for one or all datasets
+     - retrieve local file records for one or all datasets
    * - :ref:`Set Remote Files <section3.1.5>`
-     - create or modify information of remote file records for a given dataset
+     - create or modify remote file records for a given dataset
    * - :ref:`Get Remote Files <section3.1.6>`
-     - retrieve information of remote file records for one or all datasets
+     - retrieve remote file records for one or all datasets
    * - :ref:`Delete Update Information <section3.1.7>`
      - delete update control and local/remote file records
 

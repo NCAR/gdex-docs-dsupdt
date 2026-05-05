@@ -18,7 +18,7 @@ remote file records for a given dataset. It combines :ref:`-SC <SC>` (-SetContro
 |            :ref:`-(IF|InputFile) <IF>` Input Files
 |           [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
-Available mode options:
+Available :ref:`Mode options <section4>`:
 
 .. list-table::
    :widths: auto
@@ -31,7 +31,7 @@ Available mode options:
    * - :ref:`-(NL|NewLocfile) <NL>`
      - sets a new update record into GDEXDB
    * - :ref:`-(RO|ResetOrder) <RO>`
-     - resets the executing order indices of the local file records according to the order as they are given per option :ref:`-LF <LF>` (-LocalFile)
+     - resets the executing order indices of the local file records according to the order in which they are given via :ref:`-LF <LF>` (-LocalFile)
 
 At least one input file is required, since section headers can only be
 specified in an input file. A convenient way to create one is to run :ref:`-GA <GA>`

@@ -11,7 +11,8 @@ Action Option -**CF** (-**CleanFile**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 removes temporary files from the local working area,
-including files that have already been archived or have become outdated.
+including files that have already been archived or that have become
+outdated.
 
 | **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(CF|CleanFile) [:ref:`Mode Options <mode3.3.6>`]
 |           [:ref:`-(LI|LocalIndex) <LI>` LocalFileIndices]
@@ -30,7 +31,7 @@ including files that have already been archived or have become outdated.
 |           [:ref:`-(CC|CarbonCopy) <CC>` Cc'dEmailAddresses]
 |           [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
-Available mode options:
+Available :ref:`Mode options <section4>`:
 
 .. list-table::
    :widths: auto
@@ -45,7 +46,7 @@ Available mode options:
    * - :ref:`-(EE|ErrorEmail) <EE>`
      - sends email only when an error occurs during local file cleaning
    * - :ref:`-(FU|ForceUpdate) <FU>`
-     - forces clean for at least one end date/time, even if the update is not yet due
+     - forces a clean for at least one end date/time, even if the update is not yet due
    * - :ref:`-(GZ|GMTZone) <GZ>`
      - uses GMT dates/times as controlling times
    * - :ref:`-(HU|HourlyUpdate) <HU>`
@@ -59,10 +60,10 @@ Available mode options:
    * - :ref:`-(SE|SummaryEmail) <SE>`
      - sends a summary-only email after the action, without detailed log information
    * - :ref:`-(UB|UseBeginTime) <UB>`
-     - uses the period's beginning time instead of end time when substituting temporal patterns in file names and clean commands
+     - uses the period's beginning time instead of the end time when substituting temporal patterns in file names and clean commands
 
-If a temporary file is not found in the local working area, the cleaning
-action is skipped.
+When a temporary file is not found in the local working area, the
+cleaning action is skipped.
 
 
 

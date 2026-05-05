@@ -10,11 +10,12 @@
 Action Option -**UL** (-**UnLock**) (Alias: -**UnLockUpdate**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-clears lock information from update
-records whose processes terminated abnormally. While a record is being
-processed, its PID and hostname are temporarily saved. If the process aborts,
-this information may not be cleared, preventing the record from being
-reprocessed on another host. Use this action to manually clear those locks.
+(Alias: -UnLock) clears lock information from
+update records whose processes terminated abnormally. While a record is
+being processed, its PID and hostname are temporarily saved. If the
+process aborts, this information may not be cleared, preventing the
+record from being reprocessed on another host. Use this action to
+manually clear those locks.
 
 | **dsupdt** -(UL|UnLockUpdate)
 |            :ref:`-(CI|ControlIndex) <CI>` UpdateControlIndices
@@ -25,8 +26,8 @@ reprocessed on another host. Use this action to manually clear those locks.
 |            :ref:`-(LI|LocalIndex) <LI>` LocfileIndices
 |           [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
-A control index is required to unlock a control record; a local file index
-is required to unlock a local file record.
+A control index is required to unlock a control record; a local file
+index is required to unlock a local file record.
 
 
 

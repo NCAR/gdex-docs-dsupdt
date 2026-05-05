@@ -10,7 +10,7 @@
 Action Option -**SR** (-**SetRemoteFile**) (Alias: -**SetRemote**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-creates or modifies remote file
+(Alias: -SetRemote) creates or modifies remote file
 update records in GDEXDB for a given dataset and local file. One or more
 remote file records may be processed per execution.
 
@@ -25,7 +25,7 @@ remote file records may be processed per execution.
 |           [:ref:`-(TI|TimeInterval) <TI>` TimeInterval]
 |           [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
-Available mode option:
+Available :ref:`Mode option <section4>`:
 
 .. list-table::
    :widths: auto
@@ -34,29 +34,30 @@ Available mode option:
    * - :ref:`-(MD|MyDataset) <MD>`
      - sets information into GDEXDB regardless of dataset ownership
 
-Configure remote file update information only when needed. When remote and
-local file names are identical, the local file record alone is sufficient for
-data update. A remote file record is required only when the remote file differs
-from the local file, when multiple remote files are downloaded and tarred into
-a single local file, or when a single remote file is available from multiple
-servers.
+Configure remote file update information only when needed. When the remote
+and local file names are identical, the local file record alone is enough
+to drive the update. A remote file record is required only when the
+remote file differs from the local file, when multiple remote files are
+downloaded and tarred into a single local file, or when a single remote
+file is available from multiple servers.
 
-Local file indices and remote file names must be provided per options :ref:`-LI <LI>`
+Local file indices and remote file names must be provided via :ref:`-LI <LI>`
 (-LocalIndex) and :ref:`-RF <RF>` (-RemoteFile), respectively, for this action to work.
 
-If :ref:`-DC <DC>` (-DownloadCommand) is set in the remote file record, it takes
+When :ref:`-DC <DC>` (-DownloadCommand) is set in the remote file record, it takes
 precedence over the download command in the local file record.
 
-Use :ref:`-SF <SF>` (-ServerFile) to specify the file's name on the remote server when
-it differs from the remote file name. If not set, the server file name is
-assumed to match the remote file name.
+Use :ref:`-SF <SF>` (-ServerFile) to specify the file's name on the remote server
+when it differs from the remote file name. If not set, the server file
+name is assumed to match the remote file name.
 
 Files downloaded from a server or generated locally are staged on disk as
 remote files until they are validated and converted into local files.
 
-If a remote file is available from multiple servers, use :ref:`-DO <DO>` (-DownloadOrder)
-to set download order indices. The server with the lowest index is tried first;
-if it fails, servers are tried in ascending index order until one succeeds.
+When a remote file is available from multiple servers, use
+:ref:`-DO <DO>` (-DownloadOrder) to set download order indices. The server with the
+lowest index is tried first; if it fails, the next is tried in ascending
+index order until one succeeds.
 
 
 

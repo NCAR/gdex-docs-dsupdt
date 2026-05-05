@@ -13,10 +13,10 @@ optional and do not accept values.
 Mode Option -**AW** (-**AnyWhere**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-works with :ref:`Info option <section5>` :ref:`-BP <BP>` (-BatchProcess) to use an empty
-working directory so that the recorded **dsupdt** command can be executed from
-any directory, rather than only from the directory where it was originally
-recorded.
+works with :ref:`Info option <section5>` :ref:`-BP <BP>` (-BatchProcess) to use an
+empty working directory so that the recorded **dsupdt** command can be
+executed from any directory, rather than only from the directory where
+it was originally recorded.
 
 
 .. _BG:
@@ -24,7 +24,7 @@ recorded.
 Mode Option -**BG** (-**BackGround**) (Alias: -**b**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-background process. When present, screen
+(Alias: -b) — background process. When present, screen
 display is suppressed for both standard output and errors.
 
 
@@ -33,9 +33,9 @@ display is suppressed for both standard output and errors.
 Mode Option -**CA** (-**CheckAll**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-allows check update action :ref:`-CU <CU>` (-CheckUpdate) to verify
-availability of all remote files. Without it, checking stops after the first
-unavailable file.
+allows the check update action :ref:`-CU <CU>` (-CheckUpdate) to
+verify availability of all remote files. Without it, checking stops
+after the first unavailable file.
 
 
 .. _CN:
@@ -43,22 +43,23 @@ unavailable file.
 Mode Option -**CN** (-**CheckNewer**) (Alias: -**CheckNewFile**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-when the server file is available
-locally, checks if it has changed on the server and re-downloads it if so.
-This option is ignored if :ref:`-RD <RD>` is present. A local copy of the data file is
-required for the comparison. This copy is normally the local copy of the server
-file, but may also be an existing remote or local file with identical content,
-even if the name differs.
+when the server file is
+available locally, checks whether it has changed on the server and
+re-downloads it if so. This option is ignored if :ref:`-RD <RD>` is present. A local
+copy of the data file is required for the comparison. This copy is
+normally the local copy of the server file, but may also be an existing
+remote or local file with identical content, even if the name differs.
 
-For this option to work correctly, specialists must maintain a valid local
-copy of the data file and a download command capable of checking the server
-for changes. Suitable commands include 'cp', 'mv', and 'tar' for local files,
-and 'scp', 'wget', and 'ncftpget' for remote files. Custom download commands
-must include built-in logic for detecting server-side changes.
+For this option to work correctly, specialists must maintain a valid
+local copy of the data file together with a download command capable of
+detecting server-side changes. Suitable commands include 'cp', 'mv', and
+'tar' for local files, and 'scp', 'wget', and 'ncftpget' for remote
+files. Custom download commands must include built-in logic for
+detecting server-side changes.
 
-If the server and local time zones differ, provide :ref:`-HO <HO>` (-HourOffset) with the
-hour difference so that local and remote file timestamps can be compared
-correctly.
+When the server and local time zones differ, provide :ref:`-HO <HO>` (-HourOffset)
+with the hour difference so that local and remote file timestamps can be
+compared correctly.
 
 
 .. _CP:
@@ -66,8 +67,9 @@ correctly.
 Mode Option -**CP** (-**CurrentPeriod**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-allows update actions when the current date/hour falls
-within the current update period, even if the data end date/hour is not yet due.
+allows update actions when the current date/hour
+falls within the current update period, even if the data end date/hour
+is not yet due.
 
 
 .. _EE:
@@ -84,8 +86,9 @@ during the update action.
 Mode Option -**FO** (-**FormatOutput**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-formats the output of GET actions so that all values
-in a given field share the same dynamically calculated column width.
+formats the output of GET actions so that all
+values in a given field share the same dynamically calculated column
+width.
 
 
 .. _FU:
@@ -93,8 +96,8 @@ in a given field share the same dynamically calculated column width.
 Mode Option -**FU** (-**FutureUpdate**) (Alias: -**ForceUpdate**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-forces update for at least one end date/time, even if
-the update is not yet due.
+forces an update for at least one end date/time,
+even if the update is not yet due.
 
 
 .. _GZ:
@@ -102,7 +105,7 @@ the update is not yet due.
 Mode Option -**GZ** (-**GMTZone**) (Aliases: -**GMT**, -**GreenwichZone**, -**UTC**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-uses GMT rather than
+(Alias: -GMT|-GreenwichZone|-UTC) uses GMT rather than
 local time as the reference for update action scheduling.
 
 
@@ -111,8 +114,8 @@ local time as the reference for update action scheduling.
 Mode Option -**HU** (-**HourlyUpdate**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-forces time tracking to advance in hourly steps after
-a successful data file archive.
+forces time tracking to advance in hourly steps
+after a successful data file archive.
 
 
 .. _IE:
@@ -120,10 +123,10 @@ a successful data file archive.
 Mode Option -**IE** (-**IgnoreError**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-used with :ref:`-MU <MU>` (-MultipleUpdate) to skip failed updates
-and continue processing subsequent periods. For records with a valid interval
-defined, **dsupdt** also looks back over that interval to re-archive any
-missing data.
+used with :ref:`-MU <MU>` (-MultipleUpdate), skips failed
+updates and continues processing subsequent periods. For records with a
+valid interval defined, **dsupdt** also looks back over that interval to
+re-archive any missing data.
 
 
 .. _KR:
@@ -131,7 +134,7 @@ missing data.
 Mode Option -**KR** (-**KeepRemote**) (Alias: -**KeepRemoteFile**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-preserves the remote file on
+(Alias: -KeepRemoteFile) preserves the remote file on
 disk by copying it to the local file location rather than moving it.
 
 
@@ -140,7 +143,7 @@ disk by copying it to the local file location rather than moving it.
 Mode Option -**KS** (-**KeepServer**) (Alias: -**KeepServerFile**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-preserves the server file on
+(Alias: -KeepServerFile) preserves the server file on
 disk by copying it to the remote file location rather than moving it.
 
 
@@ -149,8 +152,8 @@ disk by copying it to the remote file location rather than moving it.
 Mode Option -**LO** (-**LogOn**) (Alias: -**LoggingOn**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-turns on detail logging when :ref:`Info <section5>` option
-:ref:`-PL <PL>` (-ProcessLimit) is present for update actions.
+(Alias: -LoggingOn) turns on detail logging when :ref:`Info <section5>`
+option :ref:`-PL <PL>` (-ProcessLimit) is present for update actions.
 
 
 .. _MD:
@@ -158,8 +161,8 @@ turns on detail logging when :ref:`Info <section5>` option
 Mode Option -**MD** (-**MyDataset**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-allows a specialist to add or modify update records for
-a dataset owned by another specialist.
+allows a specialist to add or modify update records
+for a dataset owned by another specialist.
 
 
 .. _MO:
@@ -185,9 +188,9 @@ Without this option, only the most recent period is processed.
 Mode Option -**NC** (-**NewControl**) (Alias: -**NewUpdateControl**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-required when adding a new update control record via
-:ref:`-SC <SC>` (-SetControl) with a control index of 0. Guards against unintentional
-record creation.
+is required when adding a new update control record
+via :ref:`-SC <SC>` (-SetControl) with a control index of 0. It guards against
+unintentional record creation.
 
 
 .. _NE:
@@ -203,9 +206,9 @@ suppresses all post-update email notifications.
 Mode Option -**NL** (-**NewLocfile**) (Alias: -**NewLocalFile**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-required when adding a new local file record via
-:ref:`-SL <SL>` (-SetLocalFile) with a local file index of 0. Guards against unintentional
-record creation.
+is required when adding a new local file record via
+:ref:`-SL <SL>` (-SetLocalFile) with a local file index of 0. It guards against
+unintentional record creation.
 
 
 .. _NY:
@@ -221,9 +224,9 @@ skips February 29 for leap years.
 Mode Option -**QE** (-**QuitError**) (Alias: -**QuitOnError**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-stops all update processing for the
-dataset on the first error, rather than skipping the failed file and
-continuing.
+(Alias: -QuitOnError) stops all update processing for
+the dataset on the first error, rather than skipping the failed file
+and continuing.
 
 
 .. _RA:
@@ -240,8 +243,9 @@ to `dsarch <https://gdex-docs-dsarch.readthedocs.io>`_.
 Mode Option -**RD** (-**RetryDownload**) (Alias: -**Redownload**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-retries downloading the remote
-file if it already exists locally, for :ref:`Action <section3>` :ref:`-DR <DR>` (-DownloadRemote).
+(Alias: -ReDownload) retries downloading the
+remote file when it already exists locally, for :ref:`Action <section3>` :ref:`-DR <DR>`
+(-DownloadRemote).
 
 
 .. _RE:
@@ -249,8 +253,8 @@ file if it already exists locally, for :ref:`Action <section3>` :ref:`-DR <DR>` 
 Mode Option -**RE** (-**ResetEndTime**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-resets the end date/hour when the file timestamp is
-newer than the end date/hour plus one update frequency.
+resets the end date/hour when the file timestamp
+is newer than the end date/hour plus one update frequency.
 
 
 .. _RO:
@@ -258,10 +262,10 @@ newer than the end date/hour plus one update frequency.
 Mode Option -**RO** (-**ResetOrder**) (Alias: -**Reorder**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-resets execution order indices to match
-the sequence in which local files are provided to :ref:`-SL <SL>` (-SetLocalFile).
-Alternatively, explicit order indices can be supplied via :ref:`-XO <XO>` (-ExecOrder);
-valid order index values are 1, 2, 3, ...
+(Alias: -Reorder) resets execution order indices to
+match the sequence in which local files are provided to :ref:`-SL <SL>`
+(-SetLocalFile). Alternatively, explicit order indices can be supplied
+via :ref:`-XO <XO>` (-ExecOrder); valid order index values are 1, 2, 3, ...
 
 
 .. _SE:
@@ -269,8 +273,8 @@ valid order index values are 1, 2, 3, ...
 Mode Option -**SE** (-**SummaryEmail**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-sends a brief summary email after the update action,
-omitting detailed log information.
+sends a brief summary email after the update
+action, omitting detailed log information.
 
 
 .. _UB:
@@ -278,8 +282,9 @@ omitting detailed log information.
 Mode Option -**UB** (-**UseBeginTime**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-uses the beginning time of the update period to replace
-temporal patterns in file names, download commands, and other fields.
+uses the beginning time of the update period to
+replace temporal patterns in file names, download commands, and other
+fields.
 
 
 .. _UT:
@@ -287,8 +292,9 @@ temporal patterns in file names, download commands, and other fields.
 Mode Option -**UT** (-**UpdateTime**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-forces an update of the data end time and next due update
-times in local file records, regardless of whether the update actions succeed.
+forces an update of the data end time and the
+next-due update times in local file records, regardless of whether the
+update actions succeed.
 
 
 

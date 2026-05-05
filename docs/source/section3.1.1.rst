@@ -10,15 +10,15 @@
 Action Option -**SC** (-**SetControl**) (Alias: -**SetUpdateControl**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-creates or modifies update
+(Alias: -SetUpdateControl) creates or modifies update
 control records in GDEXDB for a given dataset. These records schedule data
-update actions that are started automatically by the daemon `dscheck <https://gdex-docs-dscheck.readthedocs.io>`_. One or
-more control records may be set per execution.
+update actions that are launched automatically by the daemon `dscheck <https://gdex-docs-dscheck.readthedocs.io>`_. One
+or more control records may be set per execution.
 
 | **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(SC|SetControl) [:ref:`Mode Options <mode3.1.1>`]
 |            :ref:`-(CI|ControlIndex) <CI>` UpdateControlIndices
 |           [:ref:`-(ID|ControlID) <ID>` ControlIdString]
-|           [:ref:`-(SN|Specialist) <SN>` DSSSpecialist]
+|           [:ref:`-(SN|Specialist) <SN>` GDEXSpecialist]
 |           [:ref:`-(PI|ParentIndex) <PI>` ParentControlIndices]
 |           [:ref:`-(AN|ActionName) <AN>` DSUPDTActionNames]
 |           [:ref:`-(FQ|Frequency) <FQ>` UpdateControlFrequencies]
@@ -37,7 +37,7 @@ more control records may be set per execution.
 |           [:ref:`-(CC|CarbonCopy) <CC>` Cc'dEmailAddresses]
 |           [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
-Available mode options:
+Available :ref:`Mode options <section4>`:
 
 .. list-table::
    :widths: auto
@@ -48,17 +48,17 @@ Available mode options:
    * - :ref:`-(NC|NewControl) <NC>`
      - adds a new update control record to GDEXDB
 
-If an update control record already exists in GDEXDB, it is modified. A new
-record is added only when the control index is 0 and :ref:`Mode option <section4>` :ref:`-NC <NC>`
-(-NewControl) is present. The dataset name via :ref:`-DS <DS>` is required only when adding
-a new control record.
+An existing update control record in GDEXDB is modified in place. A new
+record is created only when the control index is 0 and :ref:`Mode option <section4>` :ref:`-NC <NC>`
+(-NewControl) is present. The dataset name via :ref:`-DS <DS>` is required only when
+adding a new control record.
 
 
 .. _3.1.1_e1:
 
-**EXAMPLE 1. To set three new update control records for d277000 using input file 'd277000.cntl':**
+**EXAMPLE 1. To set three new update control records for d277000 from input file 'd277000.cntl':**
 
-| **dsupdt** :ref:`SC <SC>` :ref:`-NC <NC>` :ref:`-IF <IF>` d277000.cntl
+| **dsupdt** :ref:`SC <SC>` :ref:`-NC <NC>` -IF d277000.cntl
 
 Content of input file d277000.cntl:
 

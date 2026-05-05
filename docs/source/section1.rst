@@ -4,63 +4,66 @@
 1 - INTRODUCTION
 =================================
 
-**dsupdt** is a utility for performing periodic dataset updates by calling `dsarch <https://gdex-docs-dsarch.readthedocs.io>`_
-to archive data onto CISL Geoscience Data Exchange (GDEX) Servers.
+**dsupdt** is a utility for performing periodic dataset updates by calling
+`dsarch <https://gdex-docs-dsarch.readthedocs.io>`_ to archive data onto the CISL Geoscience Data Exchange (GDEX) Servers.
 
-This application supports the following functions:
+The application supports the following capabilities:
 
-* Configure update information for a dataset's update controls, local files, and remote files
-* Download or retrieve data files from remote servers or other local machines
-* Call specialist-defined routines to validate and convert downloaded remote data files
+* Configure a dataset's update controls, local files, and remote files
+* Download or copy data files from remote servers or other local areas
+* Invoke specialist-defined routines to validate and convert downloaded data
 * Build local files from remote files, applying tar and/or compress operations automatically as needed
-* Archive local files onto GDEX Servers by calling `dsarch <https://gdex-docs-dsarch.readthedocs.io>`_
+* Archive local files onto the GDEX Servers via `dsarch <https://gdex-docs-dsarch.readthedocs.io>`_
 * Remove local and temporary files after data files have been archived successfully
 * Check availability of files on remote servers
-* Initiate update actions via the centralized daemon `dscheck <https://gdex-docs-dscheck.readthedocs.io>`_, via cron job, or manually
+* Initiate update actions through the centralized daemon `dscheck <https://gdex-docs-dscheck.readthedocs.io>`_, via a cron job, or manually
 
-A dataset must be configured to work with `dsarch <https://gdex-docs-dsarch.readthedocs.io>`_ before it can be set up for
-periodic updates by **dsupdt**. See the `dsarch <https://gdex-docs-dsarch.readthedocs.io>`_ help document for information
+A dataset must already be configured for `dsarch <https://gdex-docs-dsarch.readthedocs.io>`_ before it can be set up for
+periodic updates with **dsupdt**. See the `dsarch <https://gdex-docs-dsarch.readthedocs.io>`_ help document for information
 on placing a dataset under `dsarch <https://gdex-docs-dsarch.readthedocs.io>`_ control.
 
-Once update information is configured in GDEXDB, **dsupdt** downloads and archives
-data in the following steps:
+Once update information has been configured in GDEXDB, **dsupdt** downloads and
+archives data in the following stages:
 
-|  Server Files on remote server or at other local area ===DOWNLOAD/COPY=>
-|  Remote Files at local working area ==================VALIDATE/CONVERT=>
-|  Remote Files ready for building Local Files =======TAR/COMPRESS/BUILD=>
-|  Local Files ready for archive =================================DSARCH=>
-|  Files on GDEX Servers
+.. code-block:: none
 
-If not specified explicitly, the server file name defaults to the remote file name.
-For one-to-one matches between remote and local files, the remote file name
-defaults to the local file name if not otherwise specified.
+     Server Files on remote server or other local area --DOWNLOAD/COPY------>
+     Remote Files staged in the local working area ------VALIDATE/CONVERT--->
+     Remote Files ready to build Local Files ------------TAR/COMPRESS/BUILD->
+     Local Files ready for archive ----------------------DSARCH------------->
+     Files on the GDEX Servers                                               
 
-A local file update record is the minimum configuration required to update data
-files for a given dataset. Add remote file configuration records when the remote
-file name differs from the local file name, or when multiple remote files are
-needed to build a single local file.
+If a server file name is not specified explicitly, it defaults to the remote
+file name. For one-to-one matches between remote and local files, the remote
+file name defaults to the local file name when not otherwise specified.
 
-Update control records determine which data processing computers may run update
-actions. Without an update control record, updates must be started manually or
-via cron jobs on a specific computer.
+A local file update record is the minimum configuration required to update
+data files for a given dataset. Add remote file configuration records when the
+remote file name differs from the local file name, or when several remote
+files are needed to build a single local file.
 
-To prevent specialists from accidentally updating data files using configuration
-records owned by others, only the owning specialist can execute **dsupdt** against
-a given update record. Validation is also performed to prevent configuration on
-the wrong dataset: any input file used for update configuration must begin with
-the dataset number in the format 'dNNNNNN.*', where '*' matches one or more
-valid filename characters. Additionally, **dsupdt** verifies that the specialist
-is authorized for the given dataset. Execution stops if the specialist is not
-listed as an owner, unless :ref:`Mode option <section4>` :ref:`-MD <MD>` (-MyDataset) is present, which forces
-**dsupdt** to proceed with the action regardless.
+Update control records determine which data-processing computers may run
+update actions. Without an update control record, updates must be started
+manually or through cron jobs on a specific computer.
 
-If an error occurs while updating an individual data file, that file's update is
-skipped and **dsupdt** continues with the remaining updates. Restarting **dsupdt**
-resumes from where it left off for any previously unfinished files. An email
-notice is sent to the specialist who initiated the update. By default, the email
-includes detailed information on successful updates along with any error messages.
+To prevent specialists from accidentally updating data files using
+configuration records owned by others, only the owning specialist may execute
+**dsupdt** against a given update record. Validation is also performed to guard
+against configuring the wrong dataset: any input file used for update
+configuration must begin with the dataset number in the format 'dNNNNNN.*',
+where '*' matches one or more valid filename characters. In addition, **dsupdt**
+verifies that the specialist is authorized for the given dataset. Execution
+stops if the specialist is not listed as an owner, unless :ref:`Mode option <section4>` :ref:`-MD <MD>`
+(-MyDataset) is supplied, which forces **dsupdt** to proceed regardless.
 
-The following sections first describe general usage of **dsupdt**, then provide
+If an error occurs while updating an individual data file, that file's update
+is skipped and **dsupdt** continues with the remaining updates. Restarting
+**dsupdt** resumes from where it left off for any previously unfinished files.
+An email notice is sent to the specialist who initiated the update. By
+default, the email contains detailed information on successful updates along
+with any error messages.
+
+The sections below first describe general usage of **dsupdt**, then present
 detailed descriptions of each option, with examples interspersed throughout.
 
 

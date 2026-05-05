@@ -10,9 +10,9 @@
 Action Option -**AF** (-**ArchiveFile**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-archives local files onto the GDEX Server according to
-the DSARCH action previously saved in GDEXDB or specified on the command line
-via :ref:`Info option <section5>` :ref:`-AN <AN>` (-ActionName).
+archives local files onto the GDEX Server according
+to the DSARCH action previously saved in GDEXDB or specified on the
+command line via :ref:`Info option <section5>` :ref:`-AN <AN>` (-ActionName).
 
 | **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(AF|ArchiveFile) [:ref:`Mode Options <mode3.3.5>`]
 |           [:ref:`-(CI|ControlIndex) <CI>` UpdateControlIndex]
@@ -33,7 +33,7 @@ via :ref:`Info option <section5>` :ref:`-AN <AN>` (-ActionName).
 |           [:ref:`-(CC|CarbonCopy) <CC>` Cc'dEmailAddresses]
 |           [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
-Available mode options:
+Available :ref:`Mode options <section4>`:
 
 .. list-table::
    :widths: auto
@@ -48,7 +48,7 @@ Available mode options:
    * - :ref:`-(EE|ErrorEmail) <EE>`
      - sends email only when an error occurs during archiving
    * - :ref:`-(FU|ForceUpdate) <FU>`
-     - forces archive for at least one end date/time, even if the update is not yet due
+     - forces an archive for at least one end date/time, even if the update is not yet due
    * - :ref:`-(GZ|GMTZone) <GZ>`
      - uses GMT dates/times as controlling times
    * - :ref:`-(HU|HourlyUpdate) <HU>`
@@ -56,7 +56,7 @@ Available mode options:
    * - :ref:`-(IE|IgnoreError) <IE>`
      - works with :ref:`-MU <MU>` (-MultipleUpdate) to skip archive errors and continue with remaining local files
    * - :ref:`-(MO|MissedOnly) <MO>`
-     - archives local file only if it has not been archived yet
+     - archives a local file only if it has not been archived yet
    * - :ref:`-(MU|MultipleUpdate) <MU>`
      - archives all available local files across multiple update periods; without this option, only one period is processed
    * - :ref:`-(NE|NoEmail) <NE>`
@@ -66,16 +66,16 @@ Available mode options:
    * - :ref:`-(RA|RetryArchive) <RA>`
      - forces re-archiving of local files by passing :ref:`-RA <RA>` to `dsarch <https://gdex-docs-dsarch.readthedocs.io>`_
    * - :ref:`-(RE|ResetEndTime) <RE>`
-     - resets end date/hour when the file timestamp is newer than the end date/hour plus one update frequency
+     - resets the end date/hour when the file timestamp is newer than the end date/hour plus one update frequency
    * - :ref:`-(SE|SummaryEmail) <SE>`
      - sends a summary-only email after the action, without detailed log information
    * - :ref:`-(UB|UseBeginTime) <UB>`
-     - uses the period's beginning time instead of end time when substituting temporal patterns in file names and download commands
+     - uses the period's beginning time instead of the end time when substituting temporal patterns in file names and download commands
    * - :ref:`-(UT|UpdateTime) <UT>`
-     - forces an update of the data end time and next due update times regardless of whether archiving succeeds
+     - forces an update of the data end time and the next-due update times regardless of whether archiving succeeds
 
-If a local file is not ready on the local disk, the archive action for that
-file is skipped.
+When a local file is not ready on the local disk, the archive action for
+that file is skipped.
 
 
 

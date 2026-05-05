@@ -10,9 +10,9 @@
 Action Option -**GL** (-**GetLocalFile**) (Alias: -**GetLocal**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-retrieves local file update records
-for a given dataset. If local file indices or names are provided, only those
-records are returned.
+(Alias: -GetLocal) retrieves local file update
+records for a given dataset. When local file indices or names are
+provided, only the matching records are returned.
 
 | **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(GL|GetLocalFile) [:ref:`Mode Option <mode3.1.4>`]
 |           [:ref:`-(FN|FieldNames) <FN>` FieldNameString]
@@ -24,7 +24,7 @@ records are returned.
 |           [:ref:`-(OF|OutputFile) <OF>` OutputFileName]
 |           [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
-Available mode option:
+Available :ref:`Mode option <section4>`:
 
 .. list-table::
    :widths: auto
@@ -33,8 +33,8 @@ Available mode option:
    * - :ref:`-(FO|FormatOutput) <FO>`
      - formats each column to a uniform fixed width
 
-Use :ref:`-FN <FN>` (-FieldNames) to specify which local file fields to retrieve. Defaults
-to 'LFAIUCOQJNVWZ'. Use :ref:`-FN <FN>` ALL to retrieve all available fields.
+Use :ref:`-FN <FN>` (-FieldNames) to specify which local file fields to retrieve. The
+default is 'LFAIUCOQJNVWZ'. Use :ref:`-FN <FN>` ALL to retrieve all available fields.
 
 Valid field names of local files and their corresponding :ref:`Info option <section5>` names:
 
@@ -110,7 +110,7 @@ Valid field names of local files and their corresponding :ref:`Info option <sect
      - external utility to build local files
    * - S
      - :ref:`-(SN|Specialist) <SN>`
-     - DSS specialist who owns the local file record
+     - GDEX specialist who owns the local file record
    * - D
      - :ref:`-(DE|Description) <DE>`
      - File description, include temporal patterns
@@ -118,8 +118,8 @@ Valid field names of local files and their corresponding :ref:`Info option <sect
 Specific local files can be filtered by name using :ref:`-LF <LF>` (-LocalFile), which
 accepts the '%' wildcard to match any number of characters.
 
-If no dataset number is given, update information is displayed for all available
-local files across all datasets owned by the specialist running **dsupdt**.
+When no dataset number is given, update information is displayed for every
+local file across all datasets owned by the specialist running **dsupdt**.
 
 
 .. _3.1.4_e4:

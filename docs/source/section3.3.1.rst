@@ -10,10 +10,11 @@
 Action Option -**UF** (-**UpdateFile**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-a comprehensive action that downloads and copies server
-files, validates and converts them into remote files, builds local files from
-the available remote files, archives local files to the GDEX server, and cleans
-up temporary data files generated during the update procedure.
+is a comprehensive action that downloads or copies
+server files, validates and converts them into remote files, builds local
+files from the available remote files, archives local files to the GDEX
+server, and cleans up temporary data files generated during the update
+procedure.
 
 | **dsupdt** [[:ref:`-(DS|Dataset) <DS>`] dNNNNNN] -(UF|UpdateFile) [:ref:`Mode Options <mode3.3.1>`]
 |            [:ref:`-(CI|ControlIndex) <CI>` UpdateControlIndex]
@@ -42,7 +43,7 @@ up temporary data files generated during the update procedure.
 |            [:ref:`-(CC|CarbonCopy) <CC>` Cc'dEmailAddresses]
 |            [:ref:`-(DB|Debug) <DB>` DebugModeInfo]
 
-Available mode options:
+Available :ref:`Mode options <section4>`:
 
 .. list-table::
    :widths: auto
@@ -51,15 +52,15 @@ Available mode options:
    * - :ref:`-(AW|AnyWhere) <AW>`
      - works with :ref:`-BP <BP>` (-BatchProcess) to allow the recorded **dsupdt** command to start from any directory
    * - :ref:`-(BG|BackGround) <BG>`
-     - runs in background; suppresses screen output and errors
+     - runs in the background; suppresses screen output and errors
    * - :ref:`-(CN|CheckNewer) <CN>`
-     - when the server file is available locally, checks if it has changed on the server and re-downloads if so
+     - when the server file is available locally, checks whether it has changed on the server and re-downloads if so
    * - :ref:`-(CP|CurrentPeriod) <CP>`
      - allows the end date/hour to be processed even if it falls within the current update period
    * - :ref:`-(EE|ErrorEmail) <EE>`
      - sends email only when an error occurs during updates
    * - :ref:`-(FU|ForceUpdate) <FU>`
-     - forces update for at least one end date/time, even if the update is not yet due
+     - forces an update for at least one end date/time, even if the update is not yet due
    * - :ref:`-(HU|HourlyUpdate) <HU>`
      - advances time tracking to hours after a successful file update
    * - :ref:`-(IE|IgnoreError) <IE>`
@@ -85,45 +86,47 @@ Available mode options:
    * - :ref:`-(RD|RetryDownload) <RD>`
      - re-downloads the remote file even if it already exists locally
    * - :ref:`-(RE|ResetEndTime) <RE>`
-     - resets end date/hour based on the local file timestamp
+     - resets the end date/hour based on the local file timestamp
    * - :ref:`-(SE|SummaryEmail) <SE>`
-     - sends a summary email to the specialist after update without detail logging information
+     - sends a summary email to the specialist after the update without detail logging information
    * - :ref:`-(UB|UseBeginTime) <UB>`
-     - uses the period's beginning time instead of end time when substituting temporal patterns
+     - uses the period's beginning time instead of the end time when substituting temporal patterns
    * - :ref:`-(UT|UpdateTime) <UT>`
-     - forces an update of the data end time and next due update times
+     - forces an update of the data end time and the next-due update times
 
 Provide a dataset number via :ref:`-DS <DS>` to restrict updates to a single dataset.
-Runtime :ref:`Info options <section5>` can identify specific records or override GDEXDB values.
-:ref:`-CD <CD>` (-CurrentDate) and :ref:`-CH <CH>` (-CurrentHour) are runtime-only options that
-substitute a different date or hour for the system default.
+Runtime :ref:`Info options <section5>` can identify specific records or override GDEXDB
+values. :ref:`-CD <CD>` (-CurrentDate) and :ref:`-CH <CH>` (-CurrentHour) are runtime-only
+options that substitute a different date or hour for the system default.
 
-When :ref:`-MU <MU>` (-MultipleUpdate) is present, all elapsed update periods between
-the data end date/hour and the current date/hour are processed.
+When :ref:`-MU <MU>` (-MultipleUpdate) is present, every elapsed update period
+between the data end date/hour and the current date/hour is processed.
 
 As noted in the introduction, an error during an individual file's update
-stops that file's processing. However, remote file download errors are tolerated
-when :ref:`-MR <MR>` (-MissRemote) is 'Y' for records where a local file is built from
-multiple remote files, permitting a partial update. If :ref:`-VI <VI>` (-ValidInterval) is
-also set, the partial update is held open until the missing files arrive or
-the valid period expires.
+stops that file's processing. However, remote file download errors are
+tolerated when :ref:`-MR <MR>` (-MissRemote) is 'Y' for records whose local file is
+built from multiple remote files, permitting a partial update. If
+:ref:`-VI <VI>` (-ValidInterval) is also set, the partial update is held open until
+the missing files arrive or the valid period expires.
 
-If :ref:`Info option <section5>` :ref:`-PL <PL>` is set to a value greater than 1, **dsupdt** forks multiple
-child processes, each handling one update record. This improves performance
-for datasets with many time-consuming independent update records.
+When :ref:`Info option <section5>` :ref:`-PL <PL>` is set to a value greater than 1, **dsupdt** forks
+multiple child processes, each handling one update record. This improves
+performance for datasets containing many time-consuming, independent
+update records.
 
 Additional notification recipients can be added via :ref:`-CC <CC>` (-CarbonCopy).
-DSS specialists may use login names directly, e.g., ':ref:`-CC <CC>` zji schuster'.
+GDEX specialists may use login names directly, e.g., '-CC zji schuster'.
 
-:ref:`-UF <UF>` can be run from the command line, via cron job, or through the daemon
-`dscheck <https://gdex-docs-dscheck.readthedocs.io>`_ when local file records are linked to an update control record.
-Rather than supplying :ref:`Mode options <section4>` at run time, most can be pre-configured
-in the update control record.
+:ref:`-UF <UF>` can be run from the command line, via cron job, or through the
+daemon `dscheck <https://gdex-docs-dscheck.readthedocs.io>`_ when local file records are linked to an update control
+record. Rather than supplying :ref:`Mode options <section4>` at run time, most can be
+pre-configured in the update control record.
 
-Alternatively, the individual actions :ref:`-DR <DR>` (-DownloadRemote), :ref:`-BL <BL>` (-BuildLocal),
-:ref:`-AF <AF>` (-ArchiveFile), and :ref:`-CF <CF>` (-CleanFile) can be used to step through the
-download/archive procedure. Their command-line syntax is similar to :ref:`-UF <UF>`
-(-UpdateFile) and is described in the following sections.
+Alternatively, the individual actions :ref:`-DR <DR>` (-DownloadRemote),
+:ref:`-BL <BL>` (-BuildLocal), :ref:`-AF <AF>` (-ArchiveFile), and :ref:`-CF <CF>` (-CleanFile) can be used
+to step through the download/archive procedure. Their command-line syntax
+is similar to :ref:`-UF <UF>` (-UpdateFile) and is described in the following
+sections.
 
 
 
