@@ -29,6 +29,11 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           pgrst -d ${{ github.workspace }}/docs/source -u dsupdt/src/rda_python_dsupdt/dsupdt.usg -p dsupdt/src/rda_python_dsupdt/pg_updt.py
 
+      - name: Sync version from rda-python-dsupdt
+        run: |
+          ver=$(grep -m1 '^version' dsupdt/pyproject.toml | sed -E 's/.*"(.*)".*/\1/')
+          sed -i -E "s/^version = \".*\"/version = \"$ver\"/" pyproject.toml
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v8
         with:
