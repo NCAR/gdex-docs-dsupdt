@@ -1,13 +1,23 @@
 # Configuration file for the Sphinx documentation builder.
 
+try:
+    import tomllib  # Python 3.11+
+except ModuleNotFoundError:
+    import tomli as tomllib
+
+from pathlib import Path
+
+_pyproject = Path(__file__).resolve().parents[2] / 'pyproject.toml'
+_version = tomllib.loads(_pyproject.read_text())['project']['version']
+
 # -- Project information
 
 project = 'DSUPDT Guide'
 copyright = '2026, GDEX@NCAR, https://gdex.ucar.edu/'
 author = 'Zaihua Ji'
 
-release = '0.6'
-version = '1.0.6'
+release = _version
+version = '.'.join(_version.split('.')[:2])
 
 # -- General configuration
 
