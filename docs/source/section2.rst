@@ -8,71 +8,41 @@
 |        or
 | **dsupdt** [:ref:`-(IF|InputFile) <IF>`] InputFileNames
 
-Brackets [] mark optional elements. A pipe '|' inside parentheses, as in
-(A|B), indicates that either A or B may be used. Options fall into three
-categories:
+Notation:
 
 .. list-table::
    :widths: auto
    :header-rows: 0
 
-   * - :ref:`Action options <section3>`
-     - specify which task to execute
-   * - :ref:`Mode options <section4>`
-     - modify how an action behaves
-   * - :ref:`Info options <section5>`
-     - supply values to the action
+   * - []
+     - the enclosed element is optional.
+   * - (A|B)
+     - either A or B may be used (a short form and a long form).
+   * - <OPT>
+     - OPT is an option name. Names are case-insensitive; values are not.
 
-Each option may be given in either its short or long form (e.g., :ref:`-DS <DS>` or
--Dataset). Some options have alias names for convenience. Option names are
-case-insensitive, but the values that follow :ref:`Info options <section5>` are case-sensitive.
+Every dsupdt invocation has at most one :ref:`Action option <section3>`, which selects the
+task to perform. :ref:`Mode options <section4>` change how the chosen action behaves. :ref:`Info <section5>`
+options carry the data the action needs (dataset IDs, file names, dates,
+etc.). Each action documents which :ref:`Info options <section5>` are required and which are
+optional.
 
-Option :ref:`-DS <DS>` specifies a dataset number. When provided as the first argument
-following **dsupdt**, the :ref:`-DS <DS>` (-Dataset) option name itself may be omitted. Some
-actions can run without a dataset number; in that case they apply to all
-available update control or file records across all datasets.
+Option :ref:`-DS <DS>` (-Dataset) supplies a dataset number. When it is the first argument
+after **dsupdt**, the option name itself may be omitted. Some actions can run
+without a dataset number, in which case they apply to all matching update
+control or file records across datasets.
 
-Specify exactly one :ref:`Action option <section3>` per execution. Depending on the chosen
-:ref:`Action <section3>`, certain :ref:`Info options <section5>` are mandatory, others are optional, and specific
-:ref:`Mode options <section4>` may be applied to alter the action's behavior.
+Many options have an alias for convenience; both short and long forms are
+accepted, and aliases are noted with each option.
 
-All options except :ref:`-IF <IF>` (-InputFile) may be supplied either on the command line
-or in input files. Input file names are passed via :ref:`-IF <IF>` and can only be given
-on the command line. See the :ref:`-IF <IF>` option description for details on how to
-format options inside input files. One or more input files may be combined
-with command-line options. The :ref:`-IF <IF>` option name itself may be omitted when a
-single input file is supplied on the command line and all action and option
-information is contained within that file.
+.. toctree::
+   :maxdepth: 2
+   :caption: Table of Contents
 
-:ref:`Info options <section5>` used with GET actions function as query filters. Four special
-characters enable more precise filtering — they must be quoted or escaped on
-the command line to prevent shell interpretation:
-
-.. list-table::
-   :widths: auto
-   :header-rows: 0
-
-   * - '!'
-     - exclude matches; must appear immediately after the option name
-   * - '<'
-     - less-than comparison on the following value
-   * - '>'
-     - greater-than comparison on the following value
-   * - '<>'
-     - range between two values
-
-Combining '!' and '<' as "-<OptionName>!<OptionValue>" expresses a 'greater
-than or equal to OptionValue' condition.
-
-The description of an individual option is displayed when **dsupdt** is run as
-
-| **dsupdt** [Option] -(h|help) [Option]
-
-The description is shown for the option placed either before or after
--(h|help). If no option is supplied, or **dsupdt** is run without arguments,
-the full document is displayed using the UNIX 'more' utility. A hard copy of
-this document can be printed from the saved file 'dsupdt.usg' inside the
-Python package rda_python_dsupdt.
+   section2.1
+   section2.2
+   section2.3
+   section2.4
 
 
 
