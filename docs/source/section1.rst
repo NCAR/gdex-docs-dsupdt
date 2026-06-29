@@ -63,8 +63,22 @@ An email notice is sent to the specialist who initiated the update. By
 default, the email contains detailed information on successful updates along
 with any error messages.
 
-The sections below first describe general usage of **dsupdt**, then present
-detailed descriptions of each option, with examples interspersed throughout.
+The **dsupdt** user guide hosted on Read the Docs is generated from this
+'dsupdt.usg' file. Opening a pull request that modifies this 'dsupdt.usg'
+file in the GitHub repository https://github.com/NCAR/rda-python-dsupdt
+triggers an automated workflow that converts the file into the RST source
+files, syncs the rda_python_dsupdt version into the documentation, and opens
+a new pull request for review in the GitHub repository
+https://github.com/NCAR/gdex-docs-dsupdt. Merging that pull request
+publishes the user guide as the 'latest' version at
+https://gdex-docs-dsupdt.readthedocs.io, and creating a GitHub release
+there publishes it as the 'stable' version.
+
+The remainder of this document is organized as follows. Section 2 covers
+general usage and conventions. Section 3 describes :ref:`Action options <section3>` grouped
+by what they manipulate (configuration records, all-information, and update
+processing). Section 4 lists :ref:`Mode options <section4>` that modify how an action behaves.
+Section 5 lists Information options that pass values into an action.
 
 
 
