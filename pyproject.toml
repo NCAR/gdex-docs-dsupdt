@@ -5,7 +5,7 @@ build-backend = "flit_core.buildapi"
 [project]
 name = "gdex-docs-dsupdt"
 authors = [{name = "Zaihua Ji", email = "zji@ucar.edu"}]
-version = "3.0.0"
+version = "3.0.1"
 description = "Documentation for dsupdt utility program in RDA Python package rda_python_dsupdt"
 
 [project.urls]
