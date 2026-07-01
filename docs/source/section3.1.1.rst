@@ -53,6 +53,13 @@ record is created only when the control index is 0 and :ref:`Mode option <sectio
 (-NewControl) is present. The dataset name via :ref:`-DS <DS>` is required only when
 adding a new control record.
 
+The update frequency (:ref:`-FQ <FQ>`) must be a single count with a unit of Y, M, W, D,
+H, N, or S (i.e., 1W, 1M), optionally a fraction of a month (1M/2, 1M/3,
+1M/5, 1M/6, 1M/10). Interval values (:ref:`-CO <CO>`, :ref:`-RI <RI>`, :ref:`-VI <VI>` here, and :ref:`-DI <DI>`, :ref:`-AT <AT>`, :ref:`-TI <TI>` in
+the local and remote file records) must be one or more count/unit pairs
+(i.e., 1D, 1D3H, 12H); malformed values are rejected when the record is set
+rather than failing later during an update.
+
 
 .. _3.1.1_e1:
 
