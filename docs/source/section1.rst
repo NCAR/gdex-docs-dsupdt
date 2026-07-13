@@ -18,10 +18,6 @@ The application supports the following capabilities:
 * Check availability of files on remote servers
 * Initiate update actions through the centralized daemon `dscheck <https://gdex-docs-dscheck.readthedocs.io>`_, via a cron job, or manually
 
-A dataset must already be configured for `dsarch <https://gdex-docs-dsarch.readthedocs.io>`_ before it can be set up for
-periodic updates with **dsupdt**. See the `dsarch <https://gdex-docs-dsarch.readthedocs.io>`_ help document for information
-on placing a dataset under `dsarch <https://gdex-docs-dsarch.readthedocs.io>`_ control.
-
 Once update information has been configured in GDEXDB, **dsupdt** downloads and
 archives data in the following stages:
 
