@@ -67,14 +67,20 @@ with real values at update time. For example, <YYYYMM> represents a
 'filename.<YYYYMM>.ext' updated to end date 2007-10-31 becomes
 'filename.200710.ext'.
 
-Linking a local file record to an update control record (via :ref:`-CI <CI>`) causes
-the control record's scheduled action to run automatically against that
-local file.
+A pattern may also be embedded in the working directory (:ref:`-WD <WD>`). When hourly
+remote/server files reuse the same name on different days, include a date
+pattern in the :ref:`-WD <WD>` path so each workdir/server-file combination is unique
+and a freshly downloaded file is not overwritten before it is archived.
 
 
 .. _3.1.3_e3:
 
-**EXAMPLE 3. To set update information for two new local files of d744004 via input file 'd744004.loc':**
+**EXAMPLE 3. -WD '$UPDTWKP/zji/ds084.1/<YYYYMMDD>' resolves to '$UPDTWKP/zji/ds084.1/20071031' for end date 2007-10-31, keeping each day's download and build isolated. Linking a local file record to an update control record (via -CI) causes the control record's scheduled action to run automatically against that local file.**
+
+
+.. _3.1.3_e4:
+
+**EXAMPLE 4. To set update information for two new local files of d744004 via input file 'd744004.loc':**
 
 | **dsupdt** :ref:`SL <SL>` :ref:`-NL <NL>` -IF d744004.loc
 

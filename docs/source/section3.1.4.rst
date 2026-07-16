@@ -122,9 +122,9 @@ When no dataset number is given, update information is displayed for every
 local file across all datasets owned by the specialist running **dsupdt**.
 
 
-.. _3.1.4_e4:
+.. _3.1.4_e5:
 
-**EXAMPLE 4. To retrieve the default local file fields for d744004, local file indices 33 and 34:**
+**EXAMPLE 5. To retrieve the default local file fields for d744004, local file indices 33 and 34:**
 
 | **dsupdt** d744004 :ref:`GL <GL>` :ref:`-LI <LI>` 33 34
 

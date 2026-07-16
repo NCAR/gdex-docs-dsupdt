@@ -25,7 +25,7 @@ together using two comprehensive actions:
 
 **Appendix A: List of Examples**
 
-- :ref:`A.5. Action Option -GA (-GetALL) <3.2.1_e5>`
+- :ref:`A.6. Action Option -GA (-GetALL) <3.2.1_e6>`
 
 
 
