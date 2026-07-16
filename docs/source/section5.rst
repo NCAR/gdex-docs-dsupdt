@@ -24,8 +24,8 @@ Information (Info) options supply values to **dsupdt**. There are two types:
 
 **Appendix A: List of Examples**
 
-- :ref:`A.6. Info Option -CC (-CarbonCopy) <5.2_e6>`
-- :ref:`A.7. Info Option -PD (-PatternDelimiter) <5.2_e7>`
+- :ref:`A.7. Info Option -CC (-CarbonCopy) <5.2_e7>`
+- :ref:`A.8. Info Option -PD (-PatternDelimiter) <5.2_e8>`
 
 
 

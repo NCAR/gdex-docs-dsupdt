@@ -40,9 +40,9 @@ edited and fed back into **dsupdt** via :ref:`-SA <SA>` (-SetAll) to apply chang
 GDEXDB.
 
 
-.. _3.2.1_e5:
+.. _3.2.1_e6:
 
-**EXAMPLE 5. To retrieve all update control, local file, and remote file information for d277000 at control index 2:**
+**EXAMPLE 6. To retrieve all update control, local file, and remote file information for d277000 at control index 2:**
 
 | **dsupdt** d277000 :ref:`GA <GA>` :ref:`-CI <CI>` 2 :ref:`-OF <OF>` d277000.all
 

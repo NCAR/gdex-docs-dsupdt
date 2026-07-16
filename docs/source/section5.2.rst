@@ -75,9 +75,9 @@ names; others must provide full addresses for domains outside
 'ucar.edu'.
 
 
-.. _5.2_e6:
+.. _5.2_e7:
 
-**EXAMPLE 6. To Cc 'schuster@ucar.edu' on update results for d337000:**
+**EXAMPLE 7. To Cc 'schuster@ucar.edu' on update results for d337000:**
 
 | **dsupdt** d337000 :ref:`UF <UF>` :ref:`-MU <MU>` -IE :ref:`-CC <CC>` schuster
 
@@ -134,7 +134,7 @@ enables debug mode with a specified detail level. This
 option accepts up to 3 values: Debug Level, debug log file path, and
 debug log file name. The debug level is required and may be a single
 integer (e.g., 1000 to log levels 1 through 1000) or a range (e.g.,
-200-1000). The default log path is '$DSSHOME/dssdb/log' and the default
+200-1000). The default log path is '$GDEXHOME/dssdb/log' and the default
 log file name is 'pgdss.dbg'. Provide the second and third values to
 override these defaults.
 
@@ -439,9 +439,9 @@ fraction: 'C' for uppercase (A, B, C, ...), 'c' for lowercase
 Generic patterns are supplied at run time via :ref:`-GP <GP>` (-GenericPattern).
 
 
-.. _5.2_e7:
+.. _5.2_e8:
 
-**EXAMPLE 7. When a local file name contains '<P0>.txt', the replacement value for '<P0>' must be the first -GP value; omitting it causes a fatal error. Additional patterns (<P1>, <P2>, ...) are provided as subsequent -GP values.**
+**EXAMPLE 8. When a local file name contains '<P0>.txt', the replacement value for '<P0>' must be the first -GP value; omitting it causes a fatal error. Additional patterns (<P1>, <P2>, ...) are provided as subsequent -GP values.**
 
 
 .. _PI:

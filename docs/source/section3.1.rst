@@ -43,7 +43,8 @@ modified, viewed, or deleted via the actions in this section:
 - :ref:`A.1. Action Option -SC (-SetControl) <3.1.1_e1>`
 - :ref:`A.2. Action Option -GC (-GetControl) <3.1.2_e2>`
 - :ref:`A.3. Action Option -SL (-SetLocalFile) <3.1.3_e3>`
-- :ref:`A.4. Action Option -GL (-GetLocalFile) <3.1.4_e4>`
+- :ref:`A.4. Action Option -SL (-SetLocalFile) <3.1.3_e4>`
+- :ref:`A.5. Action Option -GL (-GetLocalFile) <3.1.4_e5>`
 
 
 
