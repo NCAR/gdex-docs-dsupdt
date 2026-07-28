@@ -441,7 +441,7 @@ Generic patterns are supplied at run time via :ref:`-GP <GP>` (-GenericPattern).
 
 .. _5.2_e8:
 
-**EXAMPLE 8. When a local file name contains '<P0>.txt', the replacement value for '<P0>' must be the first -GP value; omitting it causes a fatal error. Additional patterns (<P1>, <P2>, ...) are provided as subsequent -GP values.**
+**EXAMPLE 8. When a local file name contains '<P0>.txt', the replacement value for '<P0>' must be the first -GP value; omitting it causes a fatal error. Additional patterns (<P1>, <P2>, ...) are provided as subsequent -GP values. A serial pattern '<Sstart:endS>' (or '<Sstart:end:stepS>' with an explicit step, defaulting to 1) embedded in a local file name (-LF) or remote file name (-RF) expands that single name into a list of names, one per integer from 'start' to 'end' inclusive. Each value is zero-padded to the digit width of 'start'. For example, 'file.<S01:03S>' expands to 'file.01', 'file.02', and 'file.03', while 'file.<S0:6:2S>' expands to 'file.0', 'file.2', 'file.4', and 'file.6'.**
 
 
 .. _PI:
