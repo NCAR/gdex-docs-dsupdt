@@ -561,7 +561,8 @@ Info Option -**UC** (-**UpdateControl**) :
 — a string of single letters pre-configuring
 :ref:`Mode options <section4>` in an update control record:
 
-* B: use period begin times for temporal patterns (equivalent to :ref:`-BT <BT>` mode);
+* A: check all remote files instead of stopping at the first missing one (equivalent to :ref:`-CA <CA>`);
+* B: use period begin times for temporal patterns (equivalent to :ref:`-UB <UB>`);
 * C: allow updates within the current period before the end time is due (equivalent to :ref:`-CP <CP>`);
 * E: reset end date/hour when the file timestamp exceeds it by one frequency (equivalent to :ref:`-RE <RE>`);
 * F: force at least one update even if not yet due (equivalent to :ref:`-FU <FU>`);
@@ -578,11 +579,14 @@ Info Option -**UC** (-**UpdateControl**) :
 Info Option -**VI** (-**ValidInterval**) :
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-sets the number of days or hours that remote
-files remain valid on the server. If the time difference between the
-current date/time and the data date/time exceeds the interval
-configured in GDEXDB by this option, **dsupdt** will not attempt a
-download.
+sets a validating window, in days or hours,
+for re-checking files that are already archived. **dsupdt** rolls the
+data end date/hour back to the start of the window (current date/time
+minus this interval) and re-checks every update period from there
+through the present, re-archiving a period when a new or changed
+source file has since become available. Periods older than the window
+are considered final and are not re-checked. Without this option only
+the next pending update period is processed.
 
 
 .. _WD:

@@ -78,10 +78,10 @@ names:
      - retry interval for failed dsupdt, i.e., 1M2D, 2H
    * - V
      - :ref:`-(VI|ValidInterval) <VI>`
-     - update valid interval, i.e., 2D, 1M
+     - validating window for re-checking archived files, i.e., 2D, 1M
    * - U
      - :ref:`-(UC|UpdateControl) <UC>`
-     - any of B-Begin, C-Current, E-Reset End Date/Time, F-Future, G-GMT, M-Multi, N-New, O-Miss, Y-Skip Feb. 29, Z-Allow Zero Filesize
+     - any of A-Check All(:ref:`-CA <CA>`), B-Begin(:ref:`-UB <UB>`), C-Current(:ref:`-CP <CP>`), E-Reset End Date/Time(:ref:`-RE <RE>`), F-Future(:ref:`-FU <FU>`), G-GMT(:ref:`-GZ <GZ>`), M-Multi(:ref:`-MU <MU>`), N-New(:ref:`-CN <CN>`), O-Miss(:ref:`-MO <MO>`), Y-Skip Feb. 29(:ref:`-NY <NY>`), Z-Allow Zero Filesize(:ref:`-VS <VS>` 0)
    * - J
      - :ref:`-(MC|EMailControl) <MC>`
      - one of A-All, E-Error, N-No, S-Summary, B-Summary when Error
