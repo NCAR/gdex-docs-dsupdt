@@ -89,7 +89,7 @@ Valid field names of local files and their corresponding :ref:`Info option <sect
      - data next due period, i.e., 1M2D
    * - V
      - :ref:`-(VI|ValidInterval) <VI>`
-     - update valid interval, i.e., 2D, 1M
+     - validating window for re-checking archived files, i.e., 2D, 1M
    * - T
      - :ref:`-(AT|AgeTime) <AT>`
      - remote file age interval, i.e., 2D, 1M
